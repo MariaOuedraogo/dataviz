@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gender</title>
 </head>
+<script src="d3.js"></script>
 <body>
+
     <svg height="200" width="200" viewBox="0 0 20 20">
-        <circle r="10" cx="10" cy="10" fill="black" />
+        <circle r="10" cx="10" cy="10" fill="black" class="main-circle" />
         <circle r="5" cx="10" cy="10" fill="transparent"
-                stroke="tomato"
-                stroke-width="10"
-                stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
-                transform="rotate(-90) translate(-20)" />
+          stroke="tomato"
+          stroke-width="10"
+          stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+          transform="rotate(-90) translate(-20)" class="inner-circle" />
       </svg>
+      
+      <svg height="200" width="200" viewBox="0 0 20 20">
+        <circle r="10" cx="10" cy="10" fill="blue" class="main-circle" />
+        <circle r="5" cx="10" cy="10" fill="transparent"
+          stroke="tomato"
+          stroke-width="10"
+          stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+          transform="rotate(-90) translate(-20)" class="inner-circle" />
+      </svg>
+      
+      <svg height="200" width="200" viewBox="0 0 20 20">
+        <circle r="10" cx="10" cy="10" fill="purple" class="main-circle" />
+        <circle r="5" cx="10" cy="10" fill="transparent"
+          stroke="tomato"
+          stroke-width="10"
+          stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+          transform="rotate(-90) translate(-20)" class="inner-circle" />
+      </svg>
+      
+      
 
     
 </body>
