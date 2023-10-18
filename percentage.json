@@ -1,0 +1,23 @@
+[
+  {
+    "Type d’exploitation": "isForcedLabour",
+    "Women": 94,
+    "Girls": 68,
+    "Men": 110,
+    "Boys": 87
+  },
+  {
+    "Type d’exploitation": "isSexualExploit",
+    "Women": 150,
+    "Girls": 124,
+    "Men": 15,
+    "Boys": 9
+  },
+  {
+    "Type d’exploitation": "isOtherExploit",
+    "Women": 12,
+    "Girls": 7,
+    "Men": 25,
+    "Boys": 2
+  }
+]
