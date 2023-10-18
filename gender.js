@@ -1,13 +1,12 @@
-d3.json("gender.json", function(data){
+d3.json("gender.json",).then(function(data) {
+  const selectedTypes = ["isForcedLabour", "isSexualExploit", "isOtherExploit"];
+  
+  data.forEach((d, i) => {
+    const menPercentage = (d.Men / (d.Women + d.Girls + d.Men + d.Boys)) * 100;
+    
+    const innerCircle = d3.select(`.inner-circle:nth-child(${i +1})`);
+    innerCircle.attr("stroke-dasharray", `calc(${menPercentage} * 31.4 / 100) 31.4`);
+  });
+  console.log(data)
+});
 
-
-
-})
-// Sélectionner les cercles "main-circle" dans vos SVG
-
-d3.selectAll(".main-circle")
-    .data(data)
-    attr("stroke-dasharray", d => {
-        const menPercentage = (d.Men / (d.Women + d.Girls + d.Men + d.Boys)) * 100;
-        return `${menPercentage} 100`;
-      });
