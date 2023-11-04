@@ -25,7 +25,7 @@ d3.json( "list.json" ).then(function(data) {
         .style("fill","blue")
         .attr("transform", `translate(0,${largeur_colonne/2})`)
         // changer la taille du texte 
-        .style("font-size","0.05rem") 
+        .style("font-size","0.1rem") 
         
 
 

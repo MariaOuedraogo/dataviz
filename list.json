@@ -1,13 +1,13 @@
 [
   
-  {"type":"isForcedLabour","valeur": 9772},
-  {"type":"isSexualExploit","valeur": 16067},
-  {"type":"isOtherExploit","valeur": 7064},
-  {"type":"isSexAndLabour","valeur": 78},
-  {"type":"isForcedMarriage","valeur": 168},
-  {"type":"isForcedMilitary","valeur": 0},
-  {"type":"isOrganRemoval","valeur": 0},
-  {"type":"isSlaveryAndPractices","valeur": 359}
+  {"type":"Forced Labour","valeur": 9772},
+  {"type":"Sexual Exploit","valeur": 16067},
+  {"type":"Other Exploit","valeur": 7064},
+  {"type":"Sex And Labour","valeur": 78},
+  {"type":"Forced Marriage","valeur": 168},
+  {"type":"Forced Military","valeur": 0},
+  {"type":"Organ Removal","valeur": 0},
+  {"type":"Slavery And Practices","valeur": 359}
  
   
   
