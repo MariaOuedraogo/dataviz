@@ -1,74 +1,82 @@
 [
   {
     "yearOfRegistration": 2002,
-    "COUNT de yearOfRegistration": 1026
+    "COUNT de yearOfRegistration": 1820
   },
   {
     "yearOfRegistration": 2003,
-    "COUNT de yearOfRegistration": 357
+    "COUNT de yearOfRegistration": 960
   },
   {
     "yearOfRegistration": 2004,
-    "COUNT de yearOfRegistration": 223
+    "COUNT de yearOfRegistration": 1620
   },
   {
     "yearOfRegistration": 2005,
-    "COUNT de yearOfRegistration": 1455
+    "COUNT de yearOfRegistration": 3980
   },
   {
     "yearOfRegistration": 2006,
-    "COUNT de yearOfRegistration": 1423
+    "COUNT de yearOfRegistration": 3310
   },
   {
     "yearOfRegistration": 2007,
-    "COUNT de yearOfRegistration": 1417
+    "COUNT de yearOfRegistration": 3110
   },
   {
     "yearOfRegistration": 2008,
-    "COUNT de yearOfRegistration": 802
+    "COUNT de yearOfRegistration": 2380
   },
   {
     "yearOfRegistration": 2009,
-    "COUNT de yearOfRegistration": 587
+    "COUNT de yearOfRegistration": 2190
   },
   {
     "yearOfRegistration": 2010,
-    "COUNT de yearOfRegistration": 943
+    "COUNT de yearOfRegistration": 3740
   },
   {
     "yearOfRegistration": 2011,
-    "COUNT de yearOfRegistration": 1340
+    "COUNT de yearOfRegistration": 4090
   },
   {
     "yearOfRegistration": 2012,
-    "COUNT de yearOfRegistration": 1367
+    "COUNT de yearOfRegistration": 2890
   },
   {
     "yearOfRegistration": 2013,
-    "COUNT de yearOfRegistration": 1832
+    "COUNT de yearOfRegistration": 4090
   },
   {
     "yearOfRegistration": 2014,
-    "COUNT de yearOfRegistration": 3000
+    "COUNT de yearOfRegistration": 5970
   },
   {
     "yearOfRegistration": 2015,
-    "COUNT de yearOfRegistration": 4276
+    "COUNT de yearOfRegistration": 11420
   },
   {
     "yearOfRegistration": 2016,
-    "COUNT de yearOfRegistration": 16399
+    "COUNT de yearOfRegistration": 24930
   },
   {
     "yearOfRegistration": 2017,
-    "COUNT de yearOfRegistration": 6508
+    "COUNT de yearOfRegistration": 17170
   },
   {
     "yearOfRegistration": 2018,
-    "COUNT de yearOfRegistration": 5818
+    "COUNT de yearOfRegistration": 26050
   },
   {
-    "yearOfRegistration": "Total général",
-    "COUNT de yearOfRegistration": 48773
+    "yearOfRegistration": 2019,
+    "COUNT de yearOfRegistration": 27840
+  },
+  {
+    "yearOfRegistration": 2020,
+    "COUNT de yearOfRegistration": 4120
+  },
+  {
+    "yearOfRegistration": 2021,
+    "COUNT de yearOfRegistration": 2060
   }
 ]
