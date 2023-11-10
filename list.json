@@ -1,16 +1,92 @@
 [
-  
-  {"type":"Forced Labour","valeur": 9772},
-  {"type":"Sexual Exploit","valeur": 16067},
-  {"type":"Other Exploit","valeur": 7064},
-  {"type":"Sex And Labour","valeur": 78},
-  {"type":"Forced Marriage","valeur": 168},
-  {"type":"Forced Military","valeur": 0},
-  {"type":"Organ Removal","valeur": 0},
-  {"type":"Slavery And Practices","valeur": 359}
- 
-  
-  
-  
-  
+  {
+    "ageBroad": "0--8",
+    "typeOfLabourConstruction": 0,
+    "typeOfLabourDomesticWork": 19,
+    "typeOfLabourHospitality": 0,
+    "typeOfLabourOther": 123,
+    "typeOfSexProstitution": 68,
+    "typeOfSexPornography": 206,
+    "typeOfSexOther": 34
+  },
+  {
+    "ageBroad": "09--17",
+    "typeOfLabourConstruction": 29,
+    "typeOfLabourDomesticWork": 482,
+    "typeOfLabourHospitality": 98,
+    "typeOfLabourOther": 909,
+    "typeOfSexProstitution": 3055,
+    "typeOfSexPornography": 471,
+    "typeOfSexOther": 224
+  },
+  {
+    "ageBroad": "18--20",
+    "typeOfLabourConstruction": 37,
+    "typeOfLabourDomesticWork": 261,
+    "typeOfLabourHospitality": 293,
+    "typeOfLabourOther": 249,
+    "typeOfSexProstitution": 1049,
+    "typeOfSexPornography": 52,
+    "typeOfSexOther": 52
+  },
+  {
+    "ageBroad": "21--23",
+    "typeOfLabourConstruction": 65,
+    "typeOfLabourDomesticWork": 247,
+    "typeOfLabourHospitality": 168,
+    "typeOfLabourOther": 251,
+    "typeOfSexProstitution": 714,
+    "typeOfSexPornography": 20,
+    "typeOfSexOther": 30
+  },
+  {
+    "ageBroad": "24--26",
+    "typeOfLabourConstruction": 136,
+    "typeOfLabourDomesticWork": 249,
+    "typeOfLabourHospitality": 189,
+    "typeOfLabourOther": 239,
+    "typeOfSexProstitution": 489,
+    "typeOfSexPornography": 11,
+    "typeOfSexOther": 33
+  },
+  {
+    "ageBroad": "27--29",
+    "typeOfLabourConstruction": 199,
+    "typeOfLabourDomesticWork": 224,
+    "typeOfLabourHospitality": 54,
+    "typeOfLabourOther": 212,
+    "typeOfSexProstitution": 255,
+    "typeOfSexPornography": 35,
+    "typeOfSexOther": 27
+  },
+  {
+    "ageBroad": "30--38",
+    "typeOfLabourConstruction": 1139,
+    "typeOfLabourDomesticWork": 918,
+    "typeOfLabourHospitality": 46,
+    "typeOfLabourOther": 916,
+    "typeOfSexProstitution": 523,
+    "typeOfSexPornography": 31,
+    "typeOfSexOther": 38
+  },
+  {
+    "ageBroad": "39--47",
+    "typeOfLabourConstruction": 496,
+    "typeOfLabourDomesticWork": 267,
+    "typeOfLabourHospitality": 17,
+    "typeOfLabourOther": 321,
+    "typeOfSexProstitution": 92,
+    "typeOfSexPornography": 25,
+    "typeOfSexOther": 39
+  },
+  {
+    "ageBroad": "48+",
+    "typeOfLabourConstruction": 267,
+    "typeOfLabourDomesticWork": 77,
+    "typeOfLabourHospitality": 26,
+    "typeOfLabourOther": 270,
+    "typeOfSexProstitution": 13,
+    "typeOfSexPornography": 69,
+    "typeOfSexOther": 25
+  }
 ]
