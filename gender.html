@@ -12,47 +12,40 @@
 <link rel="stylesheet"  href="gender.css" />
 <body>
 
-  <!--Men percentage-->
-  <div class="container">
-    <svg height="200" width="200" viewBox="0 0 20 20">
-      <image xlink:href="./imagesgender/mengender.jpg
-      " class="image1"  x="0" y="0"  width="20"height="20 "></image>  
-      <circle r="5" cx="10" cy="10" fill="transparent" class="part"
-        stroke="#8F8A60"
-        stroke-width="10"
-        stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
-        transform="rotate(-90) translate(-20)"  />
-      <text class="percentage" x="11" y="10" font-size="4" fill="black">35%</text>
-      
-    </svg>
-    
-    
-    
-    <svg height="200" width="200" viewBox="0 0 20 20">
-      <image xlink:href="./imagesgender/mengende2.jpg
-      " class="image1"  x="0" y="0"  width="20"height="20 "></image> 
-      <circle r="5" cx="10" cy="10" fill="transparent" class="part"
-        stroke="tomato"
-        stroke-width="10"
-        stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
-        transform="rotate(-90) translate(-20)"  />
-        <text class="percentage" x="11" y="10" font-size="4" fill="black">35%</text>
-    </svg>
-    
-    <svg height="200" width="200" viewBox="0 0 20 20">
-      <image xlink:href="./imagesgender/lioncarre.jpg
-      " class="image1"  x="0" y="0"  width="20"height="20 "></image> 
-      <circle r="5" cx="10" cy="10" fill="transparent" class="part"
-        stroke="tomato"
-        stroke-width="10"
-        stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
-        transform="rotate(-90) translate(-20)"  />
-        <text class="percentage" x="11" y="10" font-size="4" fill="black">35%</text>
-    </svg>
+  <!--Les genres-->
+  <h2 data-group-id="men">Men</h2>
+  <h2 data-group-id="women">Women</h2>
+  <h2 data-group-id="boys">Boys</h2>
+  <h2 data-group-id="girls">Girls</h2>
 
-  </div>
+
+  <!--Men percentage-->
+  <div class="container" id="men">
+    
+      <svg height="200" width="200" viewBox="0 0 20 20">
+        <image xlink:href="./imagesgender/mengender.jpg" class="image1" x="0" y="0" width="20" height="20"></image>  
+        <circle r="5" cx="10" cy="10" fill="transparent" class="part" stroke="#8F8A60" stroke-width="10" stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+        <text class="percentage" x="11" y="10" font-size="4" fill="black">35%</text>
+      </svg>
+      
+      <svg height="200" width="200" viewBox="0 0 20 20">
+        <image xlink:href="./imagesgender/mengende2.jpg" class="image1" x="0" y="0" width="20" height="20"></image> 
+        <circle r="5" cx="10" cy="10" fill="transparent" class="part" stroke="tomato" stroke-width="10" stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+        <text class="percentage" x="11" y="10" font-size="4" fill="black">35%</text>
+      </svg>
+      
+      <svg height="200" width="200" viewBox="0 0 20 20">
+        <image xlink:href="./imagesgender/lioncarre.jpg" class="image1" x="0" y="0" width="20" height="20"></image> 
+        <circle r="5" cx="10" cy="10" fill="transparent" class="part" stroke="tomato" stroke-width="10" stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+        <text class="percentage" x="11" y="10" font-size="4" fill="black">35%</text>
+      </svg>
+    </div>
+  
+  
 <!--Womens Percentages-->
-<div class="container">
+<div class="container" id="women">
+<div class="cambertWomen">
+  
   <svg height="200" width="200" viewBox="0 0 20 20">
     <image xlink:href="./imagesgender/mengender.jpg
     " class="image1"  x="0" y="0"  width="20"height="20 "></image>  
@@ -88,10 +81,12 @@
       transform="rotate(-90) translate(-20)"  />
       <text class="percentage2" x="11" y="10" font-size="4" fill="black">35%</text>
   </svg>
+</div>
+</div>
 
   <!--Boys Percentages-->
 
-  <div class="container">
+  <div class="container" id="boys">
     <svg height="200" width="200" viewBox="0 0 20 20">
       <image xlink:href="./imagesgender/mengender.jpg
       " class="image1"  x="0" y="0"  width="20"height="20 "></image>  
@@ -127,10 +122,48 @@
         transform="rotate(-90) translate(-20)"  />
         <text class="percentage3" x="11" y="10" font-size="4" fill="black">35%</text>
     </svg>
-
-
+ 
+  </div>
+ <!--Girls Percentages-->
+ <div class="container" id="girls">
+  <svg height="200" width="200" viewBox="0 0 20 20">
+    <image xlink:href="./imagesgender/mengender.jpg
+    " class="image1"  x="0" y="0"  width="20"height="20 "></image>  
+    <circle r="5" cx="10" cy="10" fill="transparent" class="part4"
+      stroke="#8F8A60"
+      stroke-width="10"
+      stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+      transform="rotate(-90) translate(-20)"  />
+    <text class="percentage4" x="11" y="10" font-size="4" fill="black">35%</text>
+    
+  </svg>
+  
+  
+  
+  <svg height="200" width="200" viewBox="0 0 20 20">
+    <image xlink:href="./imagesgender/mengende2.jpg
+    " class="image1"  x="0" y="0"  width="20"height="20 "></image> 
+    <circle r="5" cx="10" cy="10" fill="transparent" class="part4"
+      stroke="tomato"
+      stroke-width="10"
+      stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+      transform="rotate(-90) translate(-20)"  />
+      <text class="percentage4" x="11" y="10" font-size="4" fill="black">35%</text>
+  </svg>
+  
+  <svg height="200" width="200" viewBox="0 0 20 20">
+    <image xlink:href="./imagesgender/lioncarre.jpg
+    " class="image1"  x="0" y="0"  width="20"height="20 "></image> 
+    <circle r="5" cx="10" cy="10" fill="transparent" class="part4"
+      stroke="tomato"
+      stroke-width="10"
+      stroke-dasharray="calc(35 * 31.4 / 100) 31.4"
+      transform="rotate(-90) translate(-20)"  />
+      <text class="percentage4" x="11" y="10" font-size="4" fill="black">35%</text>
+  </svg>
 
 </div>
+
     
       
       
