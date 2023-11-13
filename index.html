@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data viz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Poppins:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <title>A HUMAN TRAFFICKING DATAVIZ</title>
 </head>
 <body>
-    <!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
+    <main>
+        <div class="presentation">
+            <div>MARIA TANIA ALISSON</div>
+            <div>COLLEGE PROJECT</div>
+        </div>
+
+       <h1>A HUMAN TRAFFICKING <br> DATAVIZ</h1>
+
+       <div class="section">
+
+            <p class="explication-accueil">Human trafficking is a deeply pervasive crime worth 150 billion $ per year that plagues communities worldwide, involving the use of force, fraud, or coercion to exploit individuals mostly in the realms of labor or commercial sex.</p>
+
+            <div class="imagesaccueil">
+                <img class="image1" src="./imagesaccueil/image1.png" alt="">
+                <img class="image2" src="./imagesaccueil/image2.jpg" alt="">
+                <img class="image3" src="./imagesaccueil/image3.jpg" alt="">
+                <img class="image4" src="./imagesaccueil/image4.png" alt="">
+            </div>
+
+          
+            
+        </div>
+
+        <div class="circle">
+            <div class="text">
+                <p>SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL </p>
+            </div>
+          </div>
+
+          <script>
+            const text = document.querySelector('.text p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) =>
+                `<span style="transform:rotate(${i * 4.65}deg)">${char}</span>`
+            ).join("")
+          </script>
+    </main>
+
+    <div class="page2"></div>
 </body>
 </html>

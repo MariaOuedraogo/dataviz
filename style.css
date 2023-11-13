@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;      
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+main {
+    background-image: url(./imagesaccueil/background-accueil.png);
+    height: 100vh;
+}
+
+.presentation {
+    font-weight: 500;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+
+h1 {
+    font-weight: 100;
+    font-style: italic;
+    padding-left: 100px;
+    font-size: 6rem;
+}
+
+.section {
+    display: flex;
+    gap: 100px;
+}
+
+.explication-accueil {
+  font-weight: 400;
+  width: 50%;
+  margin-top: 30px;
+  padding-left: 100px;
+}
+
+.imagesaccueil {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.imagesaccueil .image1 {
+    width: 85%;
+    margin-top: -150px;
+}
+
+.imagesaccueil .image2 {
+    width: 22%;
+    filter:grayscale(100);
+    margin-left: 200px;
+    margin-top: -110px;
+}
+
+.imagesaccueil .image3 {
+    width: 17%;
+    filter:grayscale(100);
+    margin-top: -380px;
+    margin-left: -50px;
+}
+
+.imagesaccueil .image4 {
+    width: 18%;
+    margin-left: 650px;
+    margin-top: -165px;
+}
+
+.circle {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 0.75rem;
+    font-style: italic;
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: 75px;
+    margin-top: -15px;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText
+ {
+    0%
+    {
+        transform: rotate(-360deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.text span {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 100px;
+}
+
+.page2 {
+    background-image: url(./imagesaccueil/background-page2.png);
+    height: 100vh;
+}
