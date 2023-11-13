@@ -1,3 +1,9 @@
+
+.body{
+    height: 100vh;
+}
+
+
 .image1{
     clip-path:ellipse(50% 50%);
     
@@ -10,4 +16,18 @@
     justify-content: center;
     gap: 12px;
     padding: 23px;
+    
+}
+
+#men{
+    display: none;
+}
+#women{
+    display: none;
+}
+#girls{
+    display: none;
+}
+#boys{
+    display: none;
 }

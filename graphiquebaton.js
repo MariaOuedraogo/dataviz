@@ -17,7 +17,7 @@ d3.selectAll(".histobarre")
     .attr("width", largeur_colonne )
     .attr("height", d=> d["COUNT de yearOfRegistration"]*40/30000)
     .attr("transform", "scale(1,-1)")
-    .style("fill","pink")
+    .style("fill","#A21E1A")
     //.style(" background-image", "url('https://i.pinimg.com/564x/b7/4f/59/b74f59f54627c1e5ba4f1edb470342e0.jpg')")
     .attr("width",  d=> {if(d["yearOfRegistration"]== 2021) {
         return `${ largeur_colonne}px`;

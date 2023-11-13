@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="graphiquebaton.css">
+    <link rel="stylesheet" href="graphiquebaton.css">é
     <script src="d3.js" defer></script>
     <script src="graphiquebaton.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,21 +12,17 @@
     <title>Histogramme</title>
 </head>
 <body>
-    <svg class="svg" width="125vw" height="calc(125vmin * 50 / 70)" viewBox="-5 -45 70 50" >      
-        <rect x=0 y=-40 width=50 height=40 />  
 
-        <g id="barres"></g>
+    <div class="graph-container">
+        <svg class="svg" width="125vw" height="calc(125vmin * 50 / 70)" viewBox="-5 -45 70 50" >      
+            <!-- <rect x=0 y=-40 width=50 height=40 />   -->
 
-        <line class="axe" x1=0 x2=400 y1=0 y2=0 marker-end="url(#arrow)" pointer-events="none"/>
-        <line class="axe" x1=0 x2=0 y1=100 y2=-100 marker-end="url(#arrow)" marker-start="url(#backarrow)"/>
-    </svg>  
-    <br>
-    <svg width="90vmin" height="calc(90vmin * 80 / 420)" viewBox="-10 -40 420 80" >   
-        <rect id="blueBar"  width=0 height=40 fill="blue"/>           
-        <rect id="redBar"  width=0 height=40 transform="translate(400,0)scale(-1,1)" fill="red"/>  
-        <text id="blueLabel" x=0 y=-1  ></text>
-        <text id="redLabel"  x=400 y=-1 text-anchor="end" ></text>
-        <line id="sep5050" x1=200 x2=200 y1=0 y2=0 style="stroke:rgb(55, 255, 0); stroke-width:4px"></line>
-    </svg>     
+            <!-- <clipPath id="test"> -->
+                <g id="barres"></g>
+            <!-- </clipPath> -->
+
+            
+        </svg>
+    </div>
 </body>
 </html> 
