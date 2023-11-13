@@ -1,6 +1,26 @@
 
-.body{
-    height: 100vh;
+
+.container-wrapper{
+     flex-flow: row wrap;
+    text-align: center; 
+    
+    
+}
+.gender {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px; 
+    width: 50%; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px; /* Ajoutez un espacement au besoin */
 }
 
 
@@ -10,14 +30,9 @@
 
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 23px;
-    
-}
+
+
+
 
 #men{
     display: none;
@@ -31,3 +46,12 @@
 #boys{
     display: none;
 }
+
+
+
+
+
+
+
+
+

@@ -88,85 +88,98 @@ d3.selectAll(".part3")
   console.log(data)
 });``
 
-// MEN//
+// MEN //
 
-  // Sélectionnez l'en-tête "Men" par son attribut data-group-id
-  const menHeader = document.querySelector('h2[data-group-id="men"]');
+// Sélectionnez l'en-tête "Men" par son attribut data-group-id
+const menHeader = document.querySelector('h2[data-group-id="men"]');
   
-  // Sélectionnez le contenu du groupe "Men" par son ID
-  const menContent = document.getElementById('men');
+// Sélectionnez le contenu du groupe "Men" par son ID
+const menContent = document.getElementById('men');
   
-  // Ajoutez un écouteur d'événement pour gérer le survol
-  menHeader.addEventListener('mouseover', () => {
-    // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Men"
-    menContent.style.display = 'block';
-  });
+// Ajoutez un écouteur d'événement pour gérer le survol
+menHeader.addEventListener('mouseenter', () => {
+  // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Men"
+  menContent.style.display = 'block';
+  // Changez le curseur lors du survol
+  menHeader.style.cursor = 'pointer';
+});
   
-  // Ajoutez un écouteur d'événement pour gérer la fin du survol
-  menHeader.addEventListener('mouseout', () => {
-    // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Men"
-    menContent.style.display = 'block';
-  });
+// Ajoutez un écouteur d'événement pour gérer la sortie du survol
+menHeader.addEventListener('mouseleave', () => {
+  // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Men"
+  menContent.style.display = 'none';
+  // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
+  menHeader.style.cursor = 'default';
+});
 
-  // WOMEN //
+// WOMEN //
 
-   // Sélectionnez l'en-tête "Men" par son attribut data-group-id
-   const womenHeader = document.querySelector('h2[data-group-id="women"]');
+// Sélectionnez l'en-tête "Women" par son attribut data-group-id
+const womenHeader = document.querySelector('h2[data-group-id="women"]');
   
-   // Sélectionnez le contenu du groupe "Men" par son ID
-   const womenContent = document.getElementById('women');
+// Sélectionnez le contenu du groupe "Women" par son ID
+const womenContent = document.getElementById('women');
    
-   // Ajoutez un écouteur d'événement pour gérer le survol
-   womenHeader.addEventListener('mouseover', () => {
-     // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Men"
-     womenContent.style.display = 'block';
-   });
+// Ajoutez un écouteur d'événement pour gérer le survol
+womenHeader.addEventListener('mouseenter', () => {
+  // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Women"
+  womenContent.style.display = 'block';
+  // Changez le curseur lors du survol
+  womenHeader.style.cursor = 'pointer';
+});
    
-   // Ajoutez un écouteur d'événement pour gérer la fin du survol
-   menHeader.addEventListener('mouseout', () => {
-     // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Men"
-     womenContent.style.display = 'block';
-   });
+// Ajoutez un écouteur d'événement pour gérer la sortie du survol
+womenHeader.addEventListener('mouseleave', () => {
+  // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Women"
+  womenContent.style.display = 'none';
+  // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
+  womenHeader.style.cursor = 'default';
+});
 
-   // Boys //
+// Boys //
 
-     // Sélectionnez l'en-tête "Men" par son attribut data-group-id
-     const boysHeader = document.querySelector('h2[data-group-id="boys"]');
+// Sélectionnez l'en-tête "Boys" par son attribut data-group-id
+const boysHeader = document.querySelector('h2[data-group-id="boys"]');
   
-     // Sélectionnez le contenu du groupe "Men" par son ID
-     const boysContent = document.getElementById('boys');
-     
-     // Ajoutez un écouteur d'événement pour gérer le survol
-     boysHeader.addEventListener('mouseover', () => {
-       // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Men"
-       boysContent.style.display = 'block';
-     });
-     
-     // Ajoutez un écouteur d'événement pour gérer la fin du survol
-     boysHeader.addEventListener('mouseout', () => {
-       // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Men"
-      boysContent.style.display = 'block';
-     });
+// Sélectionnez le contenu du groupe "Boys" par son ID
+const boysContent = document.getElementById('boys');
+   
+// Ajoutez un écouteur d'événement pour gérer le survol
+boysHeader.addEventListener('mouseenter', () => {
+  // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Boys"
+  boysContent.style.display = 'block';
+  // Changez le curseur lors du survol
+  boysHeader.style.cursor = 'pointer';
+});
+   
+// Ajoutez un écouteur d'événement pour gérer la sortie du survol
+boysHeader.addEventListener('mouseleave', () => {
+  // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Boys"
+  boysContent.style.display = 'none';
+  // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
+  boysHeader.style.cursor = 'default';
+});
 
-    // Girl //
+// Girls //
 
-      // Sélectionnez l'en-tête "Men" par son attribut data-group-id
-   const girlsHeader = document.querySelector('h2[data-group-id="girls"]');
+// Sélectionnez l'en-tête "Girls" par son attribut data-group-id
+const girlsHeader = document.querySelector('h2[data-group-id="girls"]');
   
-   // Sélectionnez le contenu du groupe "Men" par son ID
-   const girlsContent = document.getElementById('girls');
+// Sélectionnez le contenu du groupe "Girls" par son ID
+const girlsContent = document.getElementById('girls');
    
-   // Ajoutez un écouteur d'événement pour gérer le survol
-   girlsHeader.addEventListener('mouseover', () => {
-     // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Men"
-     girlsContent.style.display = 'block';
-   });
+// Ajoutez un écouteur d'événement pour gérer le survol
+girlsHeader.addEventListener('mouseenter', () => {
+  // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Girls"
+  girlsContent.style.display = 'block';
+  // Changez le curseur lors du survol
+  girlsHeader.style.cursor = 'pointer';
+});
    
-   // Ajoutez un écouteur d'événement pour gérer la fin du survol
-   girlsHeader.addEventListener('mouseout', () => {
-     // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Men"
-     girlsContent.style.display = 'block';
-   });
-
-
+// Ajoutez un écouteur d'événement pour gérer la sortie du survol
+girlsHeader.addEventListener('mouseleave', () => {
+  // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Girls"
+  girlsContent.style.display = 'none';
+  // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
+});
 
