@@ -125,4 +125,45 @@ h1 {
 .page2 {
     background-image: url(./imagesaccueil/background-page2.png);
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+
+.page2 h2 {
+   padding-top: 101px;
+   padding-left: 101px;
+   margin-bottom: 17px;
+}
+
+.page2 .p1{
+  padding-left: 101px;
+  padding-right: 150px;
+}
+
+.page2 .p2{
+    padding-left: 101px;
+    padding-right: 400px;
+}
+
+.typewriter-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.typewriter h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(20);
+}
+
+.typewriter p {
+    overflow: hidden;
+    animation: typing 5s steps(100);
+}
+
+@keyframes typing {
+    from {width:0}
+    to {width: 100%;}
 }
