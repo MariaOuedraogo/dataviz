@@ -119,6 +119,7 @@ type_names.forEach(function (type_name, index) {
 // fetch('detail.json').then(function (response){
   
 //   response.json().then(function (data2) {
+  
     
 
 //     console.log(data2)

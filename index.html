@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Poppins:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
+    
+    <script src="d3.js" defer></script>
+
+    <script src="index.js" type="module"></script>
+
     <title>A HUMAN TRAFFICKING DATAVIZ</title>
 </head>
 <body>
@@ -69,6 +74,171 @@
                 <br>
                 It is crucial that we remain vigilant and proactive in the fight against human trafficking, working together on a global scale to protect the vulnerable and bring perpetrators to justice.</p>
             </div>
+        </div>
+    </div>
+
+    <div class="page2">
+        <div class="graph-container">
+            <svg class="svg" width="125vw" height="calc(125vmin * 50 / 70)" viewBox="-5 -45 70 50" >      
+                <!-- <rect x=0 y=-40 width=50 height=40 />   -->
+    
+                <!-- <clipPath id="test"> -->
+                    <g id="barres"></g>
+                <!-- </clipPath> -->
+    
+                
+            </svg>
+        </div>
+    </div>
+
+    <div class="page2">
+          <!--Les genres-->
+        <div class="container-wrapper">
+            <div class="gender">
+            <h2 data-group-id="men">Men</h2>
+            <h2 data-group-id="women">Women</h2>
+            <h2 data-group-id="boys">Boys</h2>
+            <h2 data-group-id="girls">Girls</h2>
+            </div>
+
+
+
+            <!--Men percentage-->
+            <div class="container" id="men">
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/mengender.jpg" class="image1" x="0" y="0" width="20" height="20"></image>
+
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part" stroke="#8F8A60" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+
+                <text class="percentage" x="10.5" y="5" font-size="4" fill="black">35%</text>
+
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Labour Exploit</text>
+
+
+
+            </svg>
+
+
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/mengende2.jpg" class="image1" x="0" y="0" width="20" height="20"></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part" stroke="tomato" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage" x="10.5" y="5" font-size="4" fill="black">35%</text>
+
+                <text x="10" y="23" font-size="1" text-anchor="middle">Sexual Exploit</text>
+
+            </svg>
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/lioncarre.jpg" class="image1" x="0" y="0" width="20" height="20"></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part" stroke="tomato" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text x="10" y="23" font-size="1" text-anchor="middle">Other Exploit</text>
+
+            </svg>
+            </div>
+
+
+            <!--Womens Percentages-->
+            <div class="container" id="women">
+
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/mengender.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part2" stroke="#8F8A60" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage2" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Labour Exploit</text>
+
+
+            </svg>
+
+
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/mengende2.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part2" stroke="tomato" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage2" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Labour Exploit</text>
+            </svg>
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/lioncarre.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part2" stroke="tomato" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage2" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text x="10" y="23" font-size="1" text-anchor="middle">Other Exploit</text>
+            </svg>
+            </div>
+
+
+            <!--Boys Percentages-->
+
+            <div class="container" id="boys">
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/mengender.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part3" stroke="#8F8A60" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage3" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Labour Exploit</text>
+
+
+            </svg>
+
+
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/mengende2.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part3" stroke="tomato" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage3" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Sexual Exploit</text>
+
+            </svg>
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/lioncarre.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part3" stroke="tomato" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage3" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Other Exploit</text>
+            </svg>
+            </div>
+
+            <!--Girls Percentages-->
+            <div class="container" id="girls">
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/mengender.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part4" stroke="#8F8A60" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage4" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Labour Exploit</text>
+            </svg>
+
+
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/mengende2.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part4" stroke="tomato" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage4" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Sexual Exploit</text>
+            </svg>
+
+            <svg height="400" width="218" viewBox="0 0 20 20">
+                <image xlink:href="./imagesgender/lioncarre.jpg" class="image1" x="0" y="0" width="20" height="20 "></image>
+                <circle r="5" cx="10" cy="10" fill="transparent" class="part4" stroke="tomato" stroke-width="10"
+                stroke-dasharray="calc(35 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                <text class="percentage4" x="10.5" y="5" font-size="4" fill="black">35%</text>
+                <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle">Other Exploit</text>
+            </svg>
+            </div>
+
         </div>
     </div>
 </body>
