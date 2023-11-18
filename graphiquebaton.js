@@ -17,8 +17,7 @@ d3.selectAll(".histobarre")
     .attr("width", largeur_colonne )
     .attr("height", d=> d["COUNT de yearOfRegistration"]*40/30000)
     .attr("transform", "scale(1,-1)")
-    .style("fill","#A21E1A")
-    //.style(" background-image", "url('https://i.pinimg.com/564x/b7/4f/59/b74f59f54627c1e5ba4f1edb470342e0.jpg')")
+    .attr("fill","#A21E1A")
     .attr("width",  d=> {if(d["yearOfRegistration"]== 2021) {
         return `${ largeur_colonne}px`;
     }else {
@@ -75,6 +74,22 @@ d3.selectAll(".histobarre")
         .select(".etiquette")
         .remove();
 });
+
+d3.select("#barres")
+.selectAll(".histobarre")
+.data(data)
+.join("g")
+.attr("class", "histobarre")
+.attr("transform", (d, i) => `translate(${i * largeur_colonne},0)`)
+.append("text")  // Add text for the year
+.attr("class", "annee-label")
+.attr("x", largeur_colonne / 2)
+.attr("y", 10)  // Adjust the y position as needed
+.style("text-anchor", "middle")
+.style("font-family", "'IBM Plex Sans', sans-serif")
+.style("font-size", "0.1rem")
+.text(d => d["yearOfRegistration"]);
+
 
 });
 

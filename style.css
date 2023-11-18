@@ -53,7 +53,7 @@ h1 {
     margin-top: 15px;
 }
 
-.imagesaccueil .image1 {
+.imagesaccueil .image-1 {
     width: 85%;
     margin-top: -150px;
 }
@@ -176,12 +176,6 @@ rect {
     fill: rgb(255, 255, 255);
     stroke: black;
     stroke-width: 0.05px;
-    }
-    
-    .graph-container {
-         background-image: url('./hommededos.png');
-         background-repeat: no-repeat;
-         background-size: cover; 
     }
 /** FIN GraphiqueBaton **/
 
