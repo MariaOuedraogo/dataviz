@@ -75,21 +75,21 @@ d3.selectAll(".histobarre")
         .remove();
 });
 
-d3.select("#barres")
-.selectAll(".histobarre")
-.data(data)
-.join("g")
-.attr("class", "histobarre")
-.attr("transform", (d, i) => `translate(${i * largeur_colonne},0)`)
-.append("text")  // Add text for the year
-.attr("class", "annee-label")
-.attr("x", largeur_colonne / 2)
-.attr("y", 10)  // Adjust the y position as needed
-.style("text-anchor", "middle")
-.style("font-family", "'IBM Plex Sans', sans-serif")
-.style("font-size", "0.1rem")
-.text(d => d["yearOfRegistration"]);
-
+d3.selectAll(".histobarre")
+    .style("opacity", "0.5")
+    .each(function(d) {
+        // Ajouter le texte uniquement pour les années 2002 et 2021
+        if (d["yearOfRegistration"] === 2002 || d["yearOfRegistration"] === 2021) {
+            d3.select(this)
+                .append("text")
+                .attr("x", largeur_colonne / 2)
+                .attr("y", largeur_colonne - 0.5)
+                .style("text-anchor", "middle")
+                .style("font-family", "'IBM Plex Sans', sans-serif")
+                .style("font-size", "0.09rem")
+                .text(d["yearOfRegistration"]);
+        }
+    });
 
 });
 
