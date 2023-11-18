@@ -91,7 +91,7 @@ d3.selectAll(".part3")
 // MEN //
 
 // Sélectionnez l'en-tête "Men" par son attribut data-group-id
-const menHeader = document.querySelector('h2[data-group-id="men"]');
+const menHeader = document.querySelector('h3[data-group-id="men"]');
   
 // Sélectionnez le contenu du groupe "Men" par son ID
 const menContent = document.getElementById('men');
@@ -115,7 +115,7 @@ menHeader.addEventListener('mouseleave', () => {
 // WOMEN //
 
 // Sélectionnez l'en-tête "Women" par son attribut data-group-id
-const womenHeader = document.querySelector('h2[data-group-id="women"]');
+const womenHeader = document.querySelector('h3[data-group-id="women"]');
   
 // Sélectionnez le contenu du groupe "Women" par son ID
 const womenContent = document.getElementById('women');
@@ -139,7 +139,7 @@ womenHeader.addEventListener('mouseleave', () => {
 // Boys //
 
 // Sélectionnez l'en-tête "Boys" par son attribut data-group-id
-const boysHeader = document.querySelector('h2[data-group-id="boys"]');
+const boysHeader = document.querySelector('h3[data-group-id="boys"]');
   
 // Sélectionnez le contenu du groupe "Boys" par son ID
 const boysContent = document.getElementById('boys');
@@ -163,7 +163,7 @@ boysHeader.addEventListener('mouseleave', () => {
 // Girls //
 
 // Sélectionnez l'en-tête "Girls" par son attribut data-group-id
-const girlsHeader = document.querySelector('h2[data-group-id="girls"]');
+const girlsHeader = document.querySelector('h3[data-group-id="girls"]');
   
 // Sélectionnez le contenu du groupe "Girls" par son ID
 const girlsContent = document.getElementById('girls');
@@ -184,7 +184,7 @@ girlsHeader.addEventListener('mouseleave', () => {
 });
 
 // Ajoutez un gestionnaire d'événements au clic sur les éléments h2
-document.querySelectorAll('.gender h2').forEach(function(element) {
+document.querySelectorAll('.gender h3').forEach(function(element) {
   element.addEventListener('click', function() {
     // Réinitialisez tous les éléments à leur état initial
     document.querySelectorAll('.part, .part2, .part3, .part4').forEach(function(circle) {

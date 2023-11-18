@@ -218,10 +218,13 @@ rect {
     flex-wrap: wrap;
     padding: 123px;
  }
- .h2 {
-     text-align: left;
-     margin:50px;
+ .gender h3 {
+    text-align: left;
+    margin: 50px;
+    width:fit-content;
  }
+
+ 
  .container {
      position: absolute;
      top: 1px; 
