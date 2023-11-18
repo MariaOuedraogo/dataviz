@@ -183,3 +183,30 @@ girlsHeader.addEventListener('mouseleave', () => {
   // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
 });
 
+// Ajoutez un gestionnaire d'événements au clic sur les éléments h2
+document.querySelectorAll('.gender h2').forEach(function(element) {
+  element.addEventListener('click', function() {
+    // Réinitialisez tous les éléments à leur état initial
+    document.querySelectorAll('.part, .part2, .part3, .part4').forEach(function(circle) {
+      circle.style.transition = 'none';
+      circle.style.strokeDasharray = '0 31.4';
+    });
+
+    // Obtenez l'ID de groupe à partir de l'attribut data-group-id
+    var groupId = this.getAttribute('data-group-id');
+
+    // Obtenez le cercle correspondant à l'ID de groupe
+    var circle = document.querySelector('.part[data-group-id="' + groupId + '"],' +
+                                       '.part2[data-group-id="' + groupId + '"],' +
+                                       '.part3[data-group-id="' + groupId + '"],' +
+                                       '.part4[data-group-id="' + groupId + '"]');
+
+    // Animer le stroke-dasharray
+    circle.style.transition = 'stroke-dasharray 4s ease-in-out';
+    circle.style.strokeDasharray = 'calc(100 * 31.4 / 100) 31.4';
+  });
+});
+
+
+
+
