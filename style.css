@@ -17,7 +17,7 @@ main {
     height: 100vh;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
 .presentation {
@@ -38,63 +38,101 @@ h1 {
     display: flex;
     gap: 5%;
     margin-top: 30px;
-    background-color: blanchedalmond;
 }
 
 .explication-accueil {
   font-weight: 400;
-  width: 40%;
-  background-color: blue;
+  width: 30%;
 }
 
 .imagesaccueil {
-    display: flex;
-    flex-direction: column;
-    background-color: aqua;
-    width: 55%;
+    background-image: url(.//imagesaccueil/image1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 65%;
+    height: 60vh;
+    
     position: relative;
+    top: -325px;
+    left: 425px;
 }
 
-.imagesaccueil .image1 {
-   position: absolute;
-    width: 85%;
-    
-}
 
 .imagesaccueil .image2 {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 15%;
+    top: 80px;
+    left: -20px;
+    width: 20%;
     filter:grayscale(100);
+    height: fit-content;
     
 }
 
 .imagesaccueil .image3 {
-    width: 17%;
+    width: 30%;
     filter:grayscale(100);
+    height: fit-content;
+
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    
 }
 
 .imagesaccueil .image4 {
-    width: 18%;
+    width: 20%;
+    height: fit-content;
+
+    position: absolute;
+    top: 100px;
+    left: 680px;
+
 }
+
+@media screen and (max-width: 1380px)  {
+
+    .imagesaccueil {
+        top: -300px;
+        width: 60%;
+        height: 60vh;
+    }
+
+
+.imagesaccueil .image3 {
+    width: 30%;
+    top: 280px;
+    left: 200px;
+    
+}
+
+.imagesaccueil .image4 {
+    width: 20%;
+    top: 100px;
+    left: 530px;
+}
+    
+}
+
 
 .circle {
     font-family: 'IBM Plex Serif', serif;
     font-size: 0.75rem;
     font-style: italic;
 
-    position: relative;
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+
+    z-index: 1;
+
+
     width: 200px;
     height: 200px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-left: auto;
-    margin-right: 75px;
-    margin-top: -15px;
 }
 
 .text {
@@ -157,12 +195,7 @@ h1 {
 .typewriter h2 {
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 2s steps(20);
-}
-
-.typewriter p {
-    overflow: hidden;
-    animation: typing 5s steps(100);
+    animation: typing 3.5s steps(50);
 }
 
 @keyframes typing {
