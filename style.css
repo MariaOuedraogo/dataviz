@@ -316,18 +316,56 @@ rect {
 
 }
 
+   
+    
+
 .container-wrapper{
     flex-wrap: wrap;
     padding: 123px;
  }
  .gender h3 {
+    font-size: 1.9rem;
     color: black;
     font-family:'poppins';
     text-align: left;
     margin: 50px;
     width:fit-content;
+    border: none;
+    position: relative;
+    background-color: transparent;
+    transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0.6;
  }
 
+  
+  .gender h3::after {
+    content: '';
+    border-bottom: solid #C5332F 8px;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    margin-top: -5px;
+    top: 0;
+    left: 4px;
+    visibility: hidden;
+    opacity: 1;
+    transition: .2s linear;
+  }
+  
+  
+  
+  .gender h3:hover::after {
+    visibility: visible;
+    opacity: 0.7;
+    width: 90%;
+  }
+  
+  .gender h3:hover {
+    letter-spacing: 2px;
+    opacity: 1;
+  }
+
+  
  
  .container {
      position: absolute;
