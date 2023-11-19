@@ -17,7 +17,6 @@ d3.selectAll(".histobarre")
     .attr("width", largeur_colonne )
     .attr("height", d=> d["COUNT de yearOfRegistration"]*40/30000)
     .attr("transform", "scale(1,-1)")
-    .attr("fill","#A21E1A")
     .attr("width",  d=> {if(d["yearOfRegistration"]== 2021) {
         return `${ largeur_colonne}px`;
     }else {
@@ -48,7 +47,7 @@ d3.selectAll(".histobarre")
 d3.selectAll(".histobarre")
 .on("mouseenter", function(e, d) {
     d3.selectAll(".histobarre")
-        .style("opacity", "0.5");
+        .style("opacity", "0.2");
     d3.select(this)
         .style("opacity", null);
 
@@ -59,9 +58,9 @@ d3.selectAll(".histobarre")
         .attr("x", largeur_colonne / 2)
         .attr("y", -d["COUNT de yearOfRegistration"] * 40 / 30000 - 1.5)
         .style("text-anchor", "middle")
-        .style("font-family","'IBM Plex Sans', sans-serif")
+        .style("font-family","'Roboto Mono', monospace")
         .style("font-size","0.1rem")
-        .text(d["COUNT de yearOfRegistration"]);
+        .text(d["COUNT de yearOfRegistration" ] + " victims");
 });
 
 d3.selectAll(".histobarre")
@@ -85,7 +84,7 @@ d3.selectAll(".histobarre")
                 .attr("x", largeur_colonne / 2)
                 .attr("y", largeur_colonne - 0.5)
                 .style("text-anchor", "middle")
-                .style("font-family", "'IBM Plex Sans', sans-serif")
+                .style("font-family", "'Roboto Mono', monospace")
                 .style("font-size", "0.09rem")
                 .text(d["yearOfRegistration"]);
         }
