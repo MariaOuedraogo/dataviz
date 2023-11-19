@@ -90,6 +90,7 @@ d3.selectAll(".part3")
 
 // MEN //
 
+
 // Sélectionnez l'en-tête "Men" par son attribut data-group-id
 const menHeader = document.querySelector('h3[data-group-id="men"]');
   
