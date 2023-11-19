@@ -1,0 +1,35 @@
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+.ligne-horizontale {
+    border-top: 1px solid #000; /* Couleur et épaisseur de la ligne */
+    margin: 10px 0 20px; /* Marge au-dessus et en dessous de la ligne (facultatif) */
+  }
+
+  .classement{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .nombres_victimes{
+    text-align: center;
+  }
+
+/* test */
+
+  .img_type_exploitation img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+  }
+
+  .wrapper{
+    display: flex;
+  }
+  .nombre{
+    text-align: center;
+  }
