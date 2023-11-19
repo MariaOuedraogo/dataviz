@@ -46,6 +46,12 @@ main h1 {
 
 @media screen and (max-width:1172px) {
 
+    main h1 {
+        font-weight: 100;
+        font-style: italic;
+        font-size: 5rem;
+    }
+
     .section {
         gap: 10%;
        
@@ -456,7 +462,16 @@ rect {
     width: 90%;
  }
 
+
+
+
+
+
+
+
  
+
+
 
 
 
