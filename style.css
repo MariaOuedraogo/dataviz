@@ -66,14 +66,14 @@ main h1 {
     left: -20px;
     width: 20%;
     filter:grayscale(100);
-    height: fit-content;
+    height: 25%;
     
 }
 
 .imagesaccueil .image3 {
     width: 30%;
     filter:grayscale(100);
-    height: fit-content;
+    height: 35%;
 
     position: absolute;
     top: 350px;
@@ -83,7 +83,7 @@ main h1 {
 
 .imagesaccueil .image4 {
     width: 20%;
-    height: fit-content;
+    height: 25%;
 
     position: absolute;
     top: 100px;
@@ -229,12 +229,11 @@ main h1 {
 
 .page4 {
     height: 110vh;
-    margin: 0;
     color: black;
 }
 
 .page4 p {
-   margin-top: 20px;
+    margin-top: 20px;
     padding: 50px;
     padding-bottom: 20px;
     font-size: 1.35rem;
@@ -363,7 +362,7 @@ rect {
 
  .conclusion .fin-trait {
    right: 300px;
-   height: 115vh;
+   height: 150vh;
    z-index: -1;
  }
 
