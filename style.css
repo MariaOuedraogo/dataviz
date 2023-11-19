@@ -300,8 +300,9 @@ rect {
     flex-shrink: 0;
     background-color: #2C2C2C;
     width: 100%;
-    height: 12vh;
+    height: 23vh;
     padding-left: 50px;
+    padding-top: 25px;
 }
 
 .page3-gender {
@@ -330,7 +331,7 @@ rect {
  
  .container {
      position: absolute;
-     top: 130px; 
+     top: 30%; 
      left: 50%;
      transform: translateX(-50%);
      padding: 20px;
