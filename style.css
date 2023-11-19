@@ -349,6 +349,7 @@ rect {
  .conclusion .fin-trait {
    right: 300px;
    height: 115vh;
+   z-index: -1;
  }
 
  .conclusion h1 {
@@ -380,11 +381,16 @@ rect {
  }
 
  video {
-   
     margin-left: 70px;
     border: solid 1px black;
     width: 90%;
  }
+
+ 
+
+
+
+
 
 
     
