@@ -345,19 +345,17 @@ rect {
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 50px; /* 100% */
+    line-height: 50px; 
     text-transform: uppercase;
     flex-shrink: 0;
     background-color: #2C2C2C;
     width: 100%;
-    /* height: 23vh; */
     padding: 50px 0 50px 25px ;
   
 }
 
 .page3-gender {
    background-color:   #f4f4f4;
-   /* height: 100vh; */
    background-repeat: no-repeat;
    background-size: cover; 
    font-family: 'Roboto Mono', monospace;
@@ -373,7 +371,7 @@ rect {
     flex-wrap: wrap;
     padding: 100px 50px 50px ;  
     display: flex;
-    /* padding: 123px; */
+ 
 
  }
 
@@ -382,7 +380,6 @@ rect {
     color: black;
     font-family:'poppins';
     text-align: left;
-    /* margin: 50px; */
     width:fit-content;
     border: none;
     position: relative;
@@ -401,7 +398,7 @@ rect {
     position: absolute;
     margin-top: -5px;
     top: 0;
-    left: 4px;
+    left: 1px;
     visibility: hidden;
     opacity: 1;
     transition: .2s linear;
@@ -422,17 +419,10 @@ rect {
 
   
  .container {
-     /* /* position: absolute;* */
-     /* top: 15%; 
-     left: 50%;  */
      display: flex;
      position: relative;
      left:15%;
-     /* margin-right: auto;  */
 
-     /* position: absolute;
-      transform: translateX(-50%);
-     padding: 20px;  */
  }
 
  .container-gender {
@@ -446,7 +436,6 @@ rect {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Styles supplémentaires si nécessaire */
     font-size: 0.9rem;
   }
 
@@ -470,24 +459,17 @@ rect {
      clip-path:ellipse(50% 50%);
  }
  
- #men{
-    /* height: 100vh; */
+ #men{ 
      display: none;
  }
  #women{
-    /* height: 100vh; */
-
-     display: none;
+    display: none;
  }
  #girls{
-    /* height: 100vh; */
-
-     display: none;
+    display: none;
  }
  #boys{
-    /* height: 100vh; */
-
-     display: none;
+   display: none;
  }
  /** FIN Gender **/
 
@@ -659,7 +641,7 @@ margin-left: 40px;
 
 
 
-
+/*crédit*/
  .container-credit{
     
     background-color: #2C2C2C;
@@ -676,8 +658,12 @@ p{
     font-size: 0.9rem;
    
 }
+
 .person{
-    list-style: url('https://api.iconify.design/grommet-icons/restroom-men.svg?color=white&width=24&height=24');
+    list-style: url('https://api.iconify.design/grommet-icons/restroom-women.svg?color=white&width=25');
+}
+.Professor{
+    list-style: url('https://api.iconify.design/grommet-icons/restroom-men.svg?color=white&width=25'); ;
 }
 .dataset{
     color: #f4f4f4;
@@ -691,7 +677,7 @@ a {
     color: #f4f4f4;
     font-size: 0.8rem;
 }
-
+/*crédit*/
 
 .chartBox {
     width: 800px;
