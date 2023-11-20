@@ -13,7 +13,27 @@
 }
 
 
-
+.container-gender {
+    position: relative;
+  }
+  
+  #info {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Styles supplémentaires si nécessaire */
+    font-size: 0.9rem;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: block;
+  }
+  
 
 
 .container-gender {
@@ -71,7 +91,11 @@
     display: none;
 }
 
-
+#info{
+    text-align: center;
+    
+    
+}
 
 
 

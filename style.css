@@ -433,6 +433,28 @@ rect {
       transform: translateX(-50%);
      padding: 20px;  */
  }
+
+ .container-gender {
+    position: relative;
+  }
+  
+  #info {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Styles supplémentaires si nécessaire */
+    font-size: 0.9rem;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: block;
+  }
+  
  .imagegender{
      clip-path:ellipse(50% 50%);
  }
