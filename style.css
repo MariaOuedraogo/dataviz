@@ -272,6 +272,7 @@ main h1 {
 }
 
 .gros-trait {
+    margin-top: 50px;
     width: 100%;
     height: 5vh;
     background-color: #2C2C2C;
@@ -330,7 +331,7 @@ rect {
 .type-exploitations{
     color: #F1F1F1;
     font-family: Poppins;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: 50px; /* 100% */
@@ -339,27 +340,30 @@ rect {
     background-color: #2C2C2C;
     width: 100%;
     /* height: 23vh; */
-    padding-left: 50px;
-    padding-top: 25px;
+    padding: 50px 0 50px 25px ;
+  
 }
 
 .page3-gender {
    background-color: rgb(255, 255, 255);
-   height: 100vh;
+   /* height: 100vh; */
    background-repeat: no-repeat;
    background-size: cover; 
    font-family: 'Roboto Mono', monospace;
    color: black;
    position: relative;
+   height: 100vh;
 
 }
 
-   
-    
+  
 
 .container-wrapper{
     flex-wrap: wrap;
+    padding: 100px 50px 50px ;
+    display: flex;
     /* padding: 123px; */
+
  }
 
  .gender h3 {
@@ -376,7 +380,8 @@ rect {
     opacity: 0.6;
  }
 
-  
+ 
+ 
   .gender h3::after {
     content: '';
     border-bottom: solid #C5332F 8px;
@@ -405,28 +410,38 @@ rect {
   }
 
   
- 
  .container {
-     position: absolute;
-     top: 30%; 
-     left: 50%;
-     transform: translateX(-50%);
-     padding: 20px;
+     /* /* position: absolute;* */
+     /* top: 15%; 
+     left: 50%;  */
+     display: flex;
+     /* margin-right: auto;  */
+
+     /* position: absolute;
+      transform: translateX(-50%);
+     padding: 20px;  */
  }
  .imagegender{
      clip-path:ellipse(50% 50%);
  }
  
  #men{
+    /* height: 100vh; */
      display: none;
  }
  #women{
+    /* height: 100vh; */
+
      display: none;
  }
  #girls{
+    /* height: 100vh; */
+
      display: none;
  }
  #boys{
+    /* height: 100vh; */
+
      display: none;
  }
  /** FIN Gender **/
@@ -480,6 +495,20 @@ rect {
     margin-bottom: 50px;
  }
 
+<<<<<<< HEAD
+ video:hover{
+   
+        cursor: url("petit.jpg"), auto;
+      
+ }
+
+
+
+
+
+
+=======
+>>>>>>> 87e80bf2344278fc45835d06b026bd195a9372d3
 .graph_bar_presentation_title{
     color: #2C2C2C;
     font-size: 4rem;
@@ -548,15 +577,19 @@ font-style: italic;
 }
 
 .age_broad_title h2{
-    font-size: 4rem;
-    text-transform: uppercase;
-
+    font-size: 5rem;
+    /* text-transform: uppercase; */
+line-height: 1.3;
+margin-left: 40px;
    
 }
 
 .age_broad_title p {
+    margin-top: 20px;
     width: 40%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-left: 40px;
+
 }
 
 .age_broad_img img{
@@ -568,6 +601,7 @@ font-style: italic;
 .age_broad_img{
     grid-column: 5/-1;
     padding: 100px 10px 100px;
+    margin-right: 60px;
 
 }
 
@@ -613,5 +647,45 @@ p{
 a {
     color: #f4f4f4;
     font-size: 0.8rem;
+}
+
+
+.chartBox {
+    width: 800px;
+    padding-left: 30px;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    border: 1px solid #2C2C2C;
+    color: #2C2C2C;
+    padding: 5px 5px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    margin: 10px 10px 30px 0;
+    
+}
+
+button::before {
+    content: "";
+    inset: 0;
+    clip-path: circle(0% at 50% 50%);
+    z-index: -1;
+    background-color: #2C2C2C;
+    transition: .5s ease-in-out;
+    position: absolute;
+}
+
+button:hover {
+    color: #F4F4F4;
+    cursor: none;
+}
+
+button:hover::before {
+    clip-path: circle(100% at 50% 50%);
+        cursor: none;
+
 }
 
