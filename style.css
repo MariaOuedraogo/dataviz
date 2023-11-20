@@ -686,6 +686,19 @@ a {
     color: #f4f4f4;
     font-size: 0.8rem;
 }
+
+.back-up{
+    position: relative;
+}
+.backHome {
+    margin: 27px;
+    width: 4vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
 /*crédit*/
 
 .chartBox {
