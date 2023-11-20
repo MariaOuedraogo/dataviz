@@ -476,10 +476,6 @@ rect {
 
 
 
-
- 
-
-
 .graph_bar_presentation_title{
     color: #2C2C2C;
     font-size: 4rem;
@@ -496,7 +492,6 @@ font-style: italic;
 }
 
 
-<<<<<<< HEAD
 .graph_bar_presentation{
     display: grid;
     margin: 0 auto;
@@ -525,7 +520,7 @@ font-style: italic;
     align-self: center;
  }
     
-=======
+
  .container-credit{
     
     background-color: #2C2C2C;
@@ -558,4 +553,3 @@ a {
     font-size: 0.8rem;
 }
 
->>>>>>> 471161af508b982e857ac6a64674b8c3a59dfce5
