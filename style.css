@@ -16,9 +16,9 @@ body {
 
 main {
     background-image: url(./imagesaccueil/background-accueil.png);
-    height: 100vh;
     padding-left: 100px;
     padding-right: 100px;
+    height: 100vh;
 }
 
 .presentation {
@@ -149,6 +149,9 @@ main h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+
 }
 
 .text {
