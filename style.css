@@ -18,7 +18,6 @@ main {
     height: 100vh;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 60px;
 }
 
 .presentation {
@@ -26,7 +25,8 @@ main {
     font-size: 0.75rem;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 35px;
+    padding-top: 60px;
+    margin-bottom: 35px;
 }
 
 main h1 {
@@ -40,17 +40,16 @@ main h1 {
 .section {
     display: flex;
     justify-content: start;
-    margin-top: 30px;
     gap: 5%;
     height: 40vh;
 }
 
-@media screen and (max-width:1172px) {
+@media screen and (max-width:1024px) {
 
     main h1 {
         font-weight: 100;
         font-style: italic;
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .section {
@@ -58,30 +57,25 @@ main h1 {
        
     }
 
-
     .imagesaccueil {
-    
 
         width: 5%;
         height: 5%;
         
-        top: -10%;
+        top: -30%;
         left: 2%;    
     }
 
-    .imagesaccueil .image2 {
-       visibility: hidden;
-    }
 
-    .imagesaccueil .image3 {
-        visibility: hidden;
+  .imagesaccueil .image2 {
     
-    }
+    top: 20%;
+    left: -5%;
 
-    .imagesaccueil .image4 {
-        visibility: hidden;
+    width: 20%; 
+    height: 80px; 
+}
 
-    }
 
 }
 
@@ -104,18 +98,11 @@ main h1 {
     height: 60vh;
     
     position: relative;
-    bottom: 55%;
+    bottom: 50%;
     left: 2%;
     
 }
 
-
-
-.imagesaccueil .image1 {
-    width: 85%;
-    position: relative;
-    top: -90px;
-}
 
 
 .imagesaccueil .image2 {
@@ -125,14 +112,14 @@ main h1 {
 
     width: 20%;
     filter:grayscale(100);
-    height: 25%;
+    height: fit-content;
     
 }
 
 .imagesaccueil .image3 {
     width: 30%;
     filter:grayscale(100);
-    height: 30%;
+    height: fit-content;
 
     position: absolute;
     top: 70%;
@@ -142,7 +129,7 @@ main h1 {
 
 .imagesaccueil .image4 {
     width: 20%;
-    height: 25%;
+    height: fit-content;
 
     position: absolute;
     top: 30%;
@@ -225,11 +212,7 @@ main h1 {
    
 }
 
-.page2 .p3 {
-    padding-left: 101px;
-    padding-right: 400px;
 
-}
 
 .typewriter-container {
     display: flex;
@@ -284,7 +267,6 @@ main h1 {
 }
 
 .gros-trait {
-    margin-top: 50px;
     width: 100%;
     height: 5vh;
     background-color: #2C2C2C;
