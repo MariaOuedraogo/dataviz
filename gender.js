@@ -201,9 +201,8 @@ document.querySelectorAll('.gender h3').forEach(function(element) {
 
    
 
-    // Animer le stroke-dasharray
-    circle.style.transition = 'stroke-dasharray 4s ease';
-    circle.style.strokeDasharray = 'calc(100 * 31.4 / 100) 31.4';
+   
+   
   });
 });
 

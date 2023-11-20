@@ -9,6 +9,7 @@
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="gender.js" defer></script>
+<script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
 
 <link rel="stylesheet"  href="gender.css" />
 <body>
@@ -66,10 +67,10 @@
   
   
 <!--Womens Percentages-->
-<div class="container-gender" id="women">
+<div class="container-gender" id="women" >
 
   
-  <svg height="400" width="218" viewBox="0 0 20 20">
+  <svg height="400" width="218" viewBox="0 0 20 20" onclick="startAnimation(this)">
     <image xlink:href="./imagesgender/mengender.jpg
     " class="imagegender"  x="0" y="0"  width="20"height="20 "></image>  
     <circle r="5" cx="10" cy="10" fill="transparent" class="part2"
@@ -85,7 +86,7 @@
   
   
   
-  <svg height="400" width="218" viewBox="0 0 20 20">
+  <svg height="400" width="218" viewBox="0 0 20 20" onclick="startAnimation(this)">
     <image xlink:href="./imagesgender/mengende2.jpg
     " class="imagegender"  x="0" y="0"  width="20"height="20 "></image> 
     <circle r="5" cx="10" cy="10" fill="transparent" class="part2"
@@ -97,7 +98,7 @@
       <text class="exploitation" x="10" y="23" font-size="1" text-anchor="middle" >Labour Exploit</text>
   </svg>
   
-  <svg height="400" width="218" viewBox="0 0 20 20">
+  <svg height="400" width="218" viewBox="0 0 20 20"onclick="startAnimation(this)">
     <image xlink:href="./imagesgender/lioncarre.jpg
     " class="imagegender"  x="0" y="0"  width="20"height="20 "></image> 
     <circle r="5" cx="10" cy="10" fill="transparent" class="part2"
@@ -130,7 +131,7 @@
     
     
     
-    <svg height="400" width="218" viewBox="0 0 20 20">
+    <svg height="400" width="218" viewBox="0 0 20 20" >
       <image xlink:href="./imagesgender/mengende2.jpg
       " class="imagegender"  x="0" y="0"  width="20"height="20 "></image> 
       <circle r="5" cx="10" cy="10" fill="transparent" class="part3"
@@ -199,6 +200,9 @@
 
 </div>
 
+
+
+</div>
       
  
       
