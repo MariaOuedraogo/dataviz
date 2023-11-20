@@ -188,7 +188,7 @@ main h1 {
 
 .page2{
     background-image: url(./imagesaccueil/background-page2.png);
-    /* height: 100vh; */
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover; 
     font-family: 'Roboto Mono', monospace;
@@ -477,6 +477,7 @@ rect {
     margin-left: 70px;
     border: solid 1px black;
     width: 90%;
+    margin-bottom: 50px;
  }
 
 .graph_bar_presentation_title{
