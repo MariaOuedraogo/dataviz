@@ -265,6 +265,7 @@ main h1 {
 }
 
 .gros-trait {
+    margin-top: 50px;
     width: 100%;
     height: 5vh;
     background-color: #2C2C2C;
@@ -346,8 +347,7 @@ rect {
 
 }
 
-   
-    
+  
 
 .container-wrapper{
     flex-wrap: wrap;
@@ -368,6 +368,10 @@ rect {
     opacity: 0.6;
  }
 
+ 
+ .gender{
+    height: 100vh;
+ }
   
   .gender h3::after {
     content: '';
@@ -610,5 +614,45 @@ p{
 a {
     color: #f4f4f4;
     font-size: 0.8rem;
+}
+
+
+.chartBox {
+    width: 800px;
+    padding-left: 30px;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    border: 1px solid #2C2C2C;
+    color: #2C2C2C;
+    padding: 5px 5px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    margin: 10px 10px 30px 0;
+    
+}
+
+button::before {
+    content: "";
+    inset: 0;
+    clip-path: circle(0% at 50% 50%);
+    z-index: -1;
+    background-color: #2C2C2C;
+    transition: .5s ease-in-out;
+    position: absolute;
+}
+
+button:hover {
+    color: #F4F4F4;
+    cursor: none;
+}
+
+button:hover::before {
+    clip-path: circle(100% at 50% 50%);
+        cursor: none;
+
 }
 
