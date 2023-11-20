@@ -1,23 +1,22 @@
 // Cette association permettra d'avoir des noms communs pour lors de l'affichage sur écran
 const names = {
-  "typeOfLabourConstruction": "construction",
-  "typeOfLabourDomesticWork": "domestic work",
-  "typeOfLabourHospitality": "hospitality  ",
+  "typeOfLabourConstruction": "forced labor in the construction industry",
+  "typeOfLabourDomesticWork": "domestic slavery",
+  "typeOfLabourHospitality": "forced labor in the  hospitality industry",
   "typeOfLabourOther": "other type of forced labour",
-  "typeOfSexProstitution": "prostitution ",
-  "typeOfSexPornography": "sex and pornography",
+  "typeOfSexProstitution": "prostitution",
+  "typeOfSexPornography": "Forced sex and pornography",
   "typeOfSexOther": "other form of sex exploitation"
 };
 
 const typesExploitation = {
-  "construction": {"description": "bla", "témoignages": "yasss"},
-  "domestic work": {"description": "yoo", "témoignages": "hehe"},
-  "hospitality": {"description": "hel", "témoignages": "nah"},
-  "other type of forced labour": {"description": "hel", "témoignages": "nah"},
-  "prostitution": {"description": "ha", "témoignages": "grr"},
-  "sex and pornography": {"description": "naa", "témoignages": "lololo"},
-  "other form of sex exploitation": {"description": "oa", "témoignages": "mo"}
-
+  "forced labor in the construction industry": {"description": "Forced construction labor refers to a situation in which individuals are compelled to engage in construction work against their will and without proper consent. This can involve various forms of coercion, threats, or manipulation to make individuals work under conditions that are often exploitative and in violation of their basic human rights.", "temoignages": "list_img/test.mp3", "image": "list_img/1.jpg","id":"1"},
+  "domestic slavery": {"description": "In the case of domestic work, the transition to trafficking occurs when the employer resorts to force, fraud, or coercion to maintain dominance over the worker, leaving the latter with the pervasive feeling that there is no viable alternative but to persist in the work. Common manifestations of force include physical or sexual abuse, restrictions on movement, limiting communication with family or friends, continuous surveillance, and the denial of appropriate treatment for work-related injuries, often accompanied by sleep deprivation.", "temoignages": "hehe", "image": "domestic_work_image.jpg"},
+  "forced labor in the  hospitality industry": {"description": "Forced hospitality is a form of exploitation where people are forced or coerced, often by threat or deception, to work in the hospitality industry. This includes being forced to provide accommodation and services, for example in hotels or restaurants, under conditions that violate their rights and autonomy. Victims of forced hospitality can be victims of exploitation, abuse and deprivation of their fundamental human rights, as they are forced to work in the hospitality sector against their will.", "temoignages": "nah", "image": "hospitality_image.jpg"},
+  "other type of forced labour": {"description": "Indicates whether the individual experienced forced labor of a specified type which could not reasonably be classified in any of the other categories due to low response rates. This encompasses activities such as aquafarming, begging, engaging in illicit pursuits, manufacturing, mining or drilling, peddling, as well as transportation and storage.", "temoignages": "nah", "image": "forced_labour_image.jpg"},
+  "prostitution": {"description": "Forced prostitution, also known as arbitrary or coerced prostitution, refers to prostitution or sexual slavery that is forced by a third party. The term 'forced prostitution' refers to situations where a person is coerced by another person to engage in controlled sexual activity.", "temoignages": "grr", "image": "prostitution_image.jpg"},
+  "Forced sex and pornography": {"description": "'Forced pornography' refers to the creation or distribution of pornographic material involving people without their consent. This can involve capturing intimate images or videos of people without their knowledge, as well as distributing this material without their authorization. These acts constitute a violation of privacy and can be a form of sexual violence. 'Forced sex' refers to any sexual activity that occurs without the explicit and voluntary consent of one or more of the people involved. It is a broad term that can encompass various forms of sexual violence and non-consensual acts. ", "temoignages": "lololo", "image": "sex_pornography_image.jpg"},
+  "other form of sex exploitation": {"description": "Indicates whether the individual experienced exploitation depicting sexual behavior other than prostitution and pornography. It includes remote interactive services and private sexual services.", "temoignages": "mo", "image": "sex_exploitation_image.jpg"}
 };
 
 // Début du traitement en JSON
@@ -55,8 +54,7 @@ fetch('list.json').then(function (response) {
     let classement = document.querySelector(".classement");
 
     for (var i = 0; i < finalData.length; i++) {
-      classement.innerHTML += "<li class='type_names'>" + finalData[i][0] + "</li>" + "<div class='ligne-horizontale'></div>"
-      ;
+      classement.innerHTML += "<li class='type_names'>" + finalData[i][0] + "</li>" + "<div class='ligne-horizontale'></div>";
     }
 
     var type_names = document.querySelectorAll(".type_names");
@@ -71,23 +69,44 @@ fetch('list.json').then(function (response) {
         // Display the corresponding details for the clicked element
         const typeName = finalData[index][0];
         const typeValue = finalData[index][1];
-        // details.innerHTML += "<p class='type_names'>" + typeName + "</p>";
 
         // Display the value associated with finalData[i][1]
-        details.innerHTML += "<p class='nombres_victimes'>" +  typeValue + "</p>";
+        details.innerHTML += "<p class='nombres_victimes'>" +  typeValue + " " +"victims" +"</p>";
         
         // Check if details are available in typesExploitation object
         if (typesExploitation[typeName]) {
           const description = typesExploitation[typeName].description;
-          const temoignages = typesExploitation[typeName].témoignages;
+          const temoignages = typesExploitation[typeName].temoignages;
+          const image = typesExploitation[typeName].image;
+          const id = typesExploitation[typeName].id;
 
-          details.innerHTML += "<p class='details'>" + "Description: " + description + "</p>";
-          details.innerHTML += "<p class='details'>" + "Témoignages: " + temoignages + "</p>";
+          // details.innerHTML += "<p class='details'>" + "Description: " + description + "</p>";
+          // details.innerHTML += "<p class='details'>" + "Témoignages: " + temoignages + "</p>";
+
+          details.innerHTML +=
+          "<div class='wrapper' '>" +
+          "<div class='explication'>" +
+          "<h2 class='title_exploitation'>" + typeName + "</h2>" +
+          "<div class='def'>" + description + "</div>" +
+          "<div class='audio'>" +
+          "  <audio controls>" +
+          "    <source src='"+ temoignages +"' type='audio/mp3'>" + 
+          "</audio>" +
+          "</div>" +
+          "</div>" +
+          "<div class='img_type_exploitation'>" +
+          "  <img src='" + image + "' alt=''>" +
+          "</div>" +
+          "</div>";
+        
+        
+
+          
+          
+
         } else {
           details.innerHTML += "<p class='details'>Détails non disponibles</p>";
         }
-
-        
       });
     });
 

@@ -251,8 +251,8 @@ main h1 {
 }
 
 .page4 p {
-    margin-top: 20px;
-    padding: 50px;
+    /* margin-top: 20px; */
+    padding: 0 50px 50px 50px;
     padding-bottom: 20px;
     font-size: 1.35rem;
    
@@ -459,8 +459,47 @@ rect {
  
 
 
+.graph_bar_presentation_title{
+    color: #2C2C2C;
+    font-size: 4rem;
+    z-index: 1;
+    line-height: 1.3;
+}
+
+.graph_bar_presentation_title_space{
+    margin-left: 50px;
+}
+
+.graph_bar_presentation_title_italic{
+font-style: italic;
+}
 
 
+.graph_bar_presentation{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: 600;
+    width: 85%;
 
+}
 
+.graph_bar_presentation_title{
+    grid-column:  2 / -1;
+}
+
+.graph_bar_presentation_img img{
+   max-width: 900px;
+   height: 100%;
+}
+.graph_bar_presentation_img{
+    grid-column: 5/-1;
+    padding: 100px 10px 100px;
+
+}
+
+.graph_bar_presentation_title, .graph_bar_presentation_img{
+    grid-row: 1 / 2;
+    align-self: center;
+ }
     
