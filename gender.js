@@ -207,6 +207,34 @@ document.querySelectorAll('.gender h3').forEach(function(element) {
 });
 
 
+  
+// Sélectionnez tous les éléments h3 avec un attribut data-group-id
+const groupHeaders = document.querySelectorAll('h3[data-group-id]');
+
+// Sélectionnez l'élément avec l'id "info"
+const infoElement = document.getElementById('info');
+
+// Ajoutez un gestionnaire d'événements à chaque en-tête de groupe
+groupHeaders.forEach(header => {
+  // Ajoutez un écouteur d'événements pour le survol (mouseenter)
+  header.addEventListener('mouseenter', () => {
+    // Masquez l'élément "info" lors du survol d'un en-tête de groupe
+    infoElement.style.display = 'none';
+  });
+
+  // Ajoutez un écouteur d'événements pour la sortie du survol (mouseleave)
+  header.addEventListener('mouseleave', () => {
+    // Réaffichez l'élément "info" lorsque le curseur quitte l'en-tête de groupe
+    infoElement.style.display = 'block';
+  });
+});
+
+
+
+
+
+
+
 
 
 
