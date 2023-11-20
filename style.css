@@ -97,9 +97,6 @@ main h1 {
 
 
 
-
-
-
 .imagesaccueil .image2 {
     position: absolute;
     top: 20%;
@@ -218,6 +215,21 @@ main h1 {
    
 
 
+}
+
+@media screen and (max-height:569px)  {
+
+    .page2 .p1{
+        padding-right: 50px;
+        
+      }
+      
+    .page2 .p2{
+          padding-right: 100px;
+         
+      }
+   
+    
 }
 
 
