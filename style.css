@@ -323,7 +323,7 @@ rect {
 .type-exploitations{
     color: #F1F1F1;
     font-family: Poppins;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: 50px; /* 100% */
@@ -332,18 +332,19 @@ rect {
     background-color: #2C2C2C;
     width: 100%;
     /* height: 23vh; */
-    padding-left: 50px;
-    padding-top: 25px;
+    padding: 50px 0 50px 25px ;
+  
 }
 
 .page3-gender {
    background-color: rgb(255, 255, 255);
-   height: 100vh;
+   /* height: 100vh; */
    background-repeat: no-repeat;
    background-size: cover; 
    font-family: 'Roboto Mono', monospace;
    color: black;
    position: relative;
+   height: 100vh;
 
 }
 
@@ -351,7 +352,10 @@ rect {
 
 .container-wrapper{
     flex-wrap: wrap;
+    padding: 100px 50px 50px ;
+    display: flex;
     /* padding: 123px; */
+
  }
 
  .gender h3 {
@@ -369,10 +373,7 @@ rect {
  }
 
  
- .gender{
-    height: 100vh;
- }
-  
+ 
   .gender h3::after {
     content: '';
     border-bottom: solid #C5332F 8px;
@@ -401,28 +402,38 @@ rect {
   }
 
   
- 
  .container {
-     position: absolute;
-     top: 30%; 
-     left: 50%;
-     transform: translateX(-50%);
-     padding: 20px;
+     /* /* position: absolute;* */
+     /* top: 15%; 
+     left: 50%;  */
+     display: flex;
+     /* margin-right: auto;  */
+
+     /* position: absolute;
+      transform: translateX(-50%);
+     padding: 20px;  */
  }
  .imagegender{
      clip-path:ellipse(50% 50%);
  }
  
  #men{
+    /* height: 100vh; */
      display: none;
  }
  #women{
+    /* height: 100vh; */
+
      display: none;
  }
  #girls{
+    /* height: 100vh; */
+
      display: none;
  }
  #boys{
+    /* height: 100vh; */
+
      display: none;
  }
  /** FIN Gender **/
@@ -475,6 +486,11 @@ rect {
     width: 90%;
  }
 
+ video:hover{
+   
+        cursor: url("petit.jpg"), auto;
+      
+ }
 
 
 
@@ -549,15 +565,19 @@ font-style: italic;
 }
 
 .age_broad_title h2{
-    font-size: 4rem;
-    text-transform: uppercase;
-
+    font-size: 5rem;
+    /* text-transform: uppercase; */
+line-height: 1.3;
+margin-left: 40px;
    
 }
 
 .age_broad_title p {
+    margin-top: 20px;
     width: 40%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-left: 40px;
+
 }
 
 .age_broad_img img{
@@ -569,6 +589,7 @@ font-style: italic;
 .age_broad_img{
     grid-column: 5/-1;
     padding: 100px 10px 100px;
+    margin-right: 60px;
 
 }
 
