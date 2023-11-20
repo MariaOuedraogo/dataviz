@@ -43,8 +43,8 @@ Designers, Developers, Writers - Alisson Menanteau
 Graphic Designers, Developers, Writers - Maria Ouedraogo
 <br>
 
-### Visit TraffixInsights
+### Visit Traffick Watch
 <br>
 
-Link to visit the site : ()
+Link to visit the site : (https://mariaouedraogo.github.io/dataviz/)
 <br>
