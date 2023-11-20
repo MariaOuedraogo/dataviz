@@ -355,7 +355,7 @@ rect {
 }
 
 .page3-gender {
-   background-color: rgb(255, 255, 255);
+   background-color:   #f4f4f4;
    /* height: 100vh; */
    background-repeat: no-repeat;
    background-size: cover; 
@@ -370,7 +370,7 @@ rect {
 
 .container-wrapper{
     flex-wrap: wrap;
-    padding: 100px 50px 50px ;
+    padding: 100px 50px 50px ;  
     display: flex;
     /* padding: 123px; */
 
@@ -425,6 +425,8 @@ rect {
      /* top: 15%; 
      left: 50%;  */
      display: flex;
+     position: relative;
+     left:15%;
      /* margin-right: auto;  */
 
      /* position: absolute;
@@ -438,7 +440,7 @@ rect {
   
   #info {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* Styles supplémentaires si nécessaire */
