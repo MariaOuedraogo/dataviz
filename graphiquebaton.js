@@ -75,10 +75,9 @@ d3.selectAll(".histobarre")
 });
 
 d3.selectAll(".histobarre")
-    .style("opacity", "0.5")
     .each(function(d) {
         // Ajouter le texte uniquement pour les années 2002 et 2021
-        if (d["yearOfRegistration"] === 2002 || d["yearOfRegistration"] === 2021) {
+        if (d["yearOfRegistration"] === 2002 || d["yearOfRegistration"] === 2021 || d["yearOfRegistration"] === 2012 || d["yearOfRegistration"] === 2007 || d["yearOfRegistration"] === 2016 )  {
             d3.select(this)
                 .append("text")
                 .attr("x", largeur_colonne / 2)

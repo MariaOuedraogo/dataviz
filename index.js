@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 // -------------------
 function animate_text() 
 {
-  let delay = 10,
+  let delay = 5,
       delay_start = 0,
       contents,
       letters;
@@ -38,3 +38,11 @@ function animate_text()
     delay_start += delay * letters.length;
   });
 }
+
+//cercle scroll
+
+const text = document.querySelector('.text p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) =>
+                `<span style="transform:rotate(${i * 4.65}deg)">${char}</span>`
+            ).join("")
