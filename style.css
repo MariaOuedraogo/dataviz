@@ -210,6 +210,13 @@ main h1 {
 .page2 .p2{
     padding-left: 101px;
     padding-right: 400px;
+   
+}
+
+.page2 .p3 {
+    padding-left: 101px;
+    padding-right: 400px;
+
 }
 
 .typewriter-container {
@@ -272,16 +279,17 @@ main h1 {
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.fin-trait {
-    
+.fin-trait { 
     position: absolute;
     border-left: 0.5px solid black;
 }
 
-.page4 .fin-trait {
+.graph_bar_presentation .fin-trait {
     left: 200px;
-    height: 110vh;
-}
+    height: 200vh;
+ }
+
+
 
 .page4 svg {
     width: 90%;
@@ -486,6 +494,7 @@ rect {
     width: 90%;
  }
 
+<<<<<<< HEAD
  video:hover{
    
         cursor: url("petit.jpg"), auto;
@@ -497,6 +506,8 @@ rect {
 
 
 
+=======
+>>>>>>> 87e80bf2344278fc45835d06b026bd195a9372d3
 .graph_bar_presentation_title{
     color: #2C2C2C;
     font-size: 4rem;
