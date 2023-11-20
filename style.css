@@ -199,7 +199,7 @@ main h1 {
 }
 
 .page2 h2 {
-   padding-top: 101px;
+   padding-top: 70px;
    padding-left: 101px;
 }
 
@@ -219,7 +219,7 @@ main h1 {
    
 }
 
-@media screen and (min-width:1024px) and (max-width:1024px) {
+@media screen and (min-width:800px) and (max-width:1200px) {
 
     .page2 p {
         font-size: 0.7rem;
@@ -331,7 +331,7 @@ main h1 {
 
 /** GraphiqueBaton **/
 rect {
-    fill: rgb(162, 58, 58);
+    fill: #a23a3a;
     stroke: black;
     stroke-width: 0.05px;
     }
