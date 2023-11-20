@@ -32,13 +32,8 @@ main {
 main h1 {
     font-weight: 100;
     font-style: italic;
-<<<<<<< Updated upstream
     font-size: 6rem;
-=======
-    padding-left: 100px;
-    font-size: 5rem;
     width: 80%;
->>>>>>> Stashed changes
 }
 
 
@@ -92,19 +87,15 @@ main h1 {
 
 .explication-accueil {
   font-weight: 400;
-<<<<<<< Updated upstream
   width: 30%;
-=======
-  width: 60%;
   margin-top: 30px;
-  padding-left: 100px;
->>>>>>> Stashed changes
+
 }
 
 
 
 .imagesaccueil {
-<<<<<<< Updated upstream
+
     background-image: url(.//imagesaccueil/image1.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -118,17 +109,14 @@ main h1 {
     
 }
 
-=======
-    display: flex;
-    flex-direction: column;
-}
+
 
 .imagesaccueil .image1 {
     width: 85%;
     position: relative;
     top: -90px;
 }
->>>>>>> Stashed changes
+
 
 .imagesaccueil .image2 {
     position: absolute;
@@ -310,7 +298,7 @@ main h1 {
 
 .graph_bar_presentation .fin-trait {
     left: 200px;
-    height: 200vh;
+    height: 300vh;
  }
 
 
@@ -519,7 +507,7 @@ rect {
     margin-bottom: 50px;
  }
 
-<<<<<<< HEAD
+
  video:hover{
    
         cursor: url("petit.jpg"), auto;
@@ -531,8 +519,7 @@ rect {
 
 
 
-=======
->>>>>>> 87e80bf2344278fc45835d06b026bd195a9372d3
+
 .graph_bar_presentation_title{
     color: #2C2C2C;
     font-size: 4rem;
