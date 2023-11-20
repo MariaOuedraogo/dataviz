@@ -46,6 +46,12 @@ main h1 {
 
 @media screen and (max-width:1172px) {
 
+    main h1 {
+        font-weight: 100;
+        font-style: italic;
+        font-size: 5rem;
+    }
+
     .section {
         gap: 10%;
        
@@ -285,11 +291,18 @@ main h1 {
 
 }
 
+.page4 .graduation {
+    border: black solid 0;
+    z-index: -1;
+}
+
 .page4 .graph-container {
     width: 100%;
     position: relative;
    
 }
+
+
 
 .test {
     display: flex;
@@ -438,8 +451,9 @@ rect {
 
  .last-words img {
     position: absolute;
-    bottom: -10px;
-    left: 450px;
+    bottom: 0%;
+    right: 32%;
+
     width: 35%;
     z-index: -1;
 
@@ -455,6 +469,13 @@ rect {
     border: solid 1px black;
     width: 90%;
  }
+
+
+
+
+
+
+
 
  
 
@@ -475,6 +496,7 @@ font-style: italic;
 }
 
 
+<<<<<<< HEAD
 .graph_bar_presentation{
     display: grid;
     margin: 0 auto;
@@ -503,3 +525,37 @@ font-style: italic;
     align-self: center;
  }
     
+=======
+ .container-credit{
+    
+    background-color: #2C2C2C;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 140vh;
+    padding: 6rem;
+    gap: 5rem;
+}
+p{
+    font-weight: 400;
+    font-size: 0.9rem;
+   
+}
+.person{
+    list-style: url('https://api.iconify.design/grommet-icons/restroom-men.svg?color=white&width=24&height=24');
+}
+.dataset{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+.doc{
+   color: #f4f4f4;
+  
+}
+a {
+    color: #f4f4f4;
+    font-size: 0.8rem;
+}
+
+>>>>>>> 471161af508b982e857ac6a64674b8c3a59dfce5
