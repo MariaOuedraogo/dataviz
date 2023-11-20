@@ -10,7 +10,7 @@ const names = {
 };
 
 const typesExploitation = {
-  "forced labor in the construction industry": {"description": "Forced construction labor refers to a situation in which individuals are compelled to engage in construction work against their will and without proper consent. This can involve various forms of coercion, threats, or manipulation to make individuals work under conditions that are often exploitative and in violation of their basic human rights.", "temoignages": "list_img/test.mp3", "image": "list_img/1.jpg","id":"1"},
+  "forced labor in the construction industry": {"description": "Forced construction labor refers to a situation in which individuals are compelled to engage in construction work against their will and without proper consent. This can involve various forms of coercion, threats, or manipulation to make individuals work under conditions that are often exploitative and in violation of their basic human rights.", "temoignages": "list_img/test.mp3", "image": "list_img/1.jpg","id":"#1"},
   "domestic slavery": {"description": "In the case of domestic work, the transition to trafficking occurs when the employer resorts to force, fraud, or coercion to maintain dominance over the worker, leaving the latter with the pervasive feeling that there is no viable alternative but to persist in the work. Common manifestations of force include physical or sexual abuse, restrictions on movement, limiting communication with family or friends, continuous surveillance, and the denial of appropriate treatment for work-related injuries, often accompanied by sleep deprivation.", "temoignages": "hehe", "image": "domestic_work_image.jpg"},
   "forced labor in the  hospitality industry": {"description": "Forced hospitality is a form of exploitation where people are forced or coerced, often by threat or deception, to work in the hospitality industry. This includes being forced to provide accommodation and services, for example in hotels or restaurants, under conditions that violate their rights and autonomy. Victims of forced hospitality can be victims of exploitation, abuse and deprivation of their fundamental human rights, as they are forced to work in the hospitality sector against their will.", "temoignages": "nah", "image": "hospitality_image.jpg"},
   "other type of forced labour": {"description": "Indicates whether the individual experienced forced labor of a specified type which could not reasonably be classified in any of the other categories due to low response rates. This encompasses activities such as aquafarming, begging, engaging in illicit pursuits, manufacturing, mining or drilling, peddling, as well as transportation and storage.", "temoignages": "nah", "image": "forced_labour_image.jpg"},
@@ -53,9 +53,22 @@ fetch('list.json').then(function (response) {
 
     let classement = document.querySelector(".classement");
 
+    // for (var i = 0; i < finalData.length; i++) {
+    //   const id = typesExploitation[typeName].id;
+
+    //   // classement.innerHTML += "<li class='type_names'>" +"<a>"   + finalData[i][0] + "</a>"+ "</li>" + "<div class='ligne-horizontale'></div>";
+    //   classement.innerHTML +=  "<a class='type_names' href='" + id + "'>" + finalData[i][0] + "</a>" + "<div class='ligne-horizontale'></div>";
+
+
+  
+    // }
+
     for (var i = 0; i < finalData.length; i++) {
-      classement.innerHTML += "<li class='type_names'>" + finalData[i][0] + "</li>" + "<div class='ligne-horizontale'></div>";
-    }
+  const id = typesExploitation[finalData[i][0]].id;
+  classement.innerHTML +=  "<a class='type_names' href='#test'>" + finalData[i][0] + "</a>" + "<div class='ligne-horizontale'></div>";
+
+}
+
 
     var type_names = document.querySelectorAll(".type_names");
 
@@ -71,7 +84,7 @@ fetch('list.json').then(function (response) {
         const typeValue = finalData[index][1];
 
         // Display the value associated with finalData[i][1]
-        details.innerHTML += "<p class='nombres_victimes'>" +  typeValue + " " +"victims" +"</p>";
+        details.innerHTML += "<p class='nombres_victimes'id='test'>" +  typeValue + " " +"victims" +"</p>";
         
         // Check if details are available in typesExploitation object
         if (typesExploitation[typeName]) {
@@ -88,7 +101,7 @@ fetch('list.json').then(function (response) {
           "<div class='explication'>" +
           "<h2 class='title_exploitation'>" + typeName + "</h2>" +
           "<div class='def'>" + description + "</div>" +
-          "<div class='audio'>" +
+          "<div class='audio container'>" +
           "  <audio controls>" +
           "    <source src='"+ temoignages +"' type='audio/mp3'>" + 
           "</audio>" +
@@ -97,9 +110,17 @@ fetch('list.json').then(function (response) {
           "<div class='img_type_exploitation'>" +
           "  <img src='" + image + "' alt=''>" +
           "</div>" +
-          "</div>";
+          "</div>"
+          "<div class='audio container'>"
+     "</div>";
         
         
+       // Change "{}" to your options:
+// https://github.com/sampotts/plyr/#options
+const player = new Plyr('audio', {});
+
+// Expose player so it can be used from the console
+window.player = player;
 
           
           

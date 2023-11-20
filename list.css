@@ -19,14 +19,7 @@ body {
 
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-}
 
-li{
-    cursor: pointer;
-}
 
 .ligne-horizontale {
     border-top: 1px solid #000; /* Couleur et épaisseur de la ligne */
@@ -63,7 +56,7 @@ li{
 
  .explication, .img_type_exploitation{
     grid-row: 1 / 2;
-    align-self: end;
+    align-self: center;
  }
   .img_type_exploitation img{
     border-radius: 50%;
@@ -74,7 +67,7 @@ li{
 
   .explication{
     z-index: 1;
-    grid-column:  2 / -1;
+    grid-column:  1 / -1;
     /* grid-column: 3/ -1; */
 
   }
@@ -90,3 +83,20 @@ li{
     padding-right: 100px;
 }
 
+/* audio::-webkit-media-controls-panel {
+  background-color: #2C2C2C;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #ffffff;
+} */
+
+
+.audio {
+	max-width: 325px;
+	--plyr-color-main: #B81E1A;
+	--plyr-control-icon-size: 20px;
+	--plyr-audio-controls-background: #2c2c2c;
+	--plyr-audio-control-color: #B81E1A;
+	--plyr-font-size-time: medium;
+}

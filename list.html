@@ -6,21 +6,26 @@
     <link rel="stylesheet" href="list.css">
     <title>LIST</title>
     
-<script src="d3.js" defer></script>
 <script src="list.js" defer></script>
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css" />
+<script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+
 
 </head>
 
 
 <body>
 
-    <ul class="classement" >
+    <div class="classement" >
         
-    </ul>
+    </div>
 
     <div class="details">
         <!-- Les détails seront affichés ici via JavaScript -->
       </div>
+
+
 
 
 
@@ -38,7 +43,7 @@
     
             </div>
     
-            <div class="audio">
+            <div class="audio container">
                 <audio controls>
                     <source src="votre-audio.mp3" type="audio/mp3">
                     Votre navigateur ne prend pas en charge l'élément audio.
@@ -51,10 +56,18 @@
                 <img src="https://i.pinimg.com/564x/f1/22/5d/f1225db51894ba63d82b87a8de8b7cf6.jpg" alt="">
             </div>
      </div>
-    </div> -->
+    </div>  -->
 
    
+<script>
+    // Change "{}" to your options:
+// https://github.com/sampotts/plyr/#options
+const player = new Plyr('audio', {});
 
+// Expose player so it can be used from the console
+window.player = player;
+
+</script>
    
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
