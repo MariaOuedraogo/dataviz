@@ -24,8 +24,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
    
-</head>
-    
+</head>  
     <script src="d3.js" defer></script>
 
     <script src="index.js" type="module"></script>
@@ -33,9 +32,12 @@
     <title>A HUMAN TRAFFICKING DATAVIZ</title>
 </head>
 <body>
-    <main class="scroll">
+
+      <!--page d'accueil-->
+
+    <main>
         <div class="presentation">
-            <a id="homePage"> <div data-aos="fade-down" data-aos-easing="linear"
+            <a id="homePage"><div data-aos="fade-down" data-aos-easing="linear"
                 data-aos-duration="2000">MARIA TANIA ALISSON</div></a>
             
             <div data-aos="fade-down" data-aos-easing="linear"
@@ -48,7 +50,7 @@
         
 
 
-            <div class="section">
+            <div class="main section">
                 <p class="explication-accueil" data-aos="fade-down" data-aos-easing="linear"
                 data-aos-duration="1000">Human trafficking is a deeply pervasive crime worth 150 billion $ per year that plagues communities worldwide, involving the use of force, fraud, or coercion to exploit individuals mostly in the realms of labor or commercial sex.</p> 
 
@@ -65,11 +67,23 @@
             <div class="text">
                 <p>SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL SCROLL </p>
             </div>
+
+            <script>
+
+            const text = document.querySelector('.text p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) =>
+                `<span style="transform:rotate(${i * 4.65}deg)">${char}</span>`
+            ).join("")
+            
+            </script>
           </div>
 
     </main>
 
-    <div class="page2 scroll">
+    <!--Lettre texte explicatif-->
+
+    <div class="page-explication scroll">
 
         <div>
             <div>
@@ -92,7 +106,10 @@
 
   
 
-<!-- test introduction premier graph -->
+<!-- page graphique baton évolution du nombres de victimes-->
+
+<!--présentation-->
+
 <div class="gros-trait"></div>
 
 <div class="graph_bar_presentation scroll">
@@ -113,18 +130,20 @@
     
 </div>
 
-    <div class="page4  scroll">
+    <div class="page-graph-baton scroll">
 
       
 
         <p>The number of human trafficking cases reached a peak of 27 840 in 2019, but showed signs of reduction in 2020 and 2021, partly due to the impact of the COVID-19 pandemic.</p>
+
+        <!--graphique baton -->
 
         <div class="test">
 
             <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
             data-aos-offset="0" data-aos-duration="1500" >"FREEDOM <br> IS <br> EVERYONE'S RIGHT"</h2>
 
-            <div class="page4 graph-container">
+            <div class="page-graph-baton graph-container">
                 <svg class="graph" width="100vw" height="calc(100vmin * 50 / 70)" viewBox="-5 -45 70 50" >      
                     <!-- <rect x=0 y=-40 width=50 height=40 />   -->
         
@@ -170,6 +189,8 @@
        
          
     </div>
+
+    <!-- fin page graphique baton -->
 
     <!--gender-->
 
@@ -346,6 +367,7 @@
 </div>
 
 <div class="details">
+
     <!-- Les détails seront affichés ici via JavaScript -->
   </div>
 
@@ -411,7 +433,7 @@
 
            
             <video data-aos="fade-down" data-aos-easing="linear"
-            data-aos-duration="1000" id="myVideo" controls muted poster="./imagesaccueil/imageprevisualisation.png">
+            data-aos-duration="1500" id="myVideo" controls muted poster="./imagesaccueil/imageprevisualisation.png">
                 
                 <source src="sextrafic.mp4" type="video/mp4">
             </video>
@@ -420,8 +442,11 @@
 
     </div>
 
+    <!--fin conclusion-->
+
    
     <!--credit-->
+
     <footer class="container-credit  scroll">
         <div class="row1">
             <h1>TERMS OF USE</h1>
