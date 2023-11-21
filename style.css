@@ -15,6 +15,9 @@ body {
     background-color: #e4e4e4;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;    
+
+
 
 
 }
@@ -156,12 +159,14 @@ main .section {
   font-weight: 400;
   width: 30%;
   margin-top: 30px;
-  scroll-snap-align: start;
 
 
 }
 
+.page-explication{
+    scroll-snap-align: center;
 
+}
 
 .imagesaccueil .image2 {
     position: absolute;
@@ -249,7 +254,10 @@ main .section {
 }
 
 /*fin animation scroll*/
+.main{
+    scroll-snap-align: center;
 
+}
 .page-explication {
     background-image: url(./imagesaccueil/background-page2.png);
     height: 100vh;
@@ -434,6 +442,7 @@ rect {
    color: black;
    position: relative;
    height: 100vh;
+   scroll-snap-align: center;
 
 }
 
@@ -554,6 +563,7 @@ rect {
 
 .conclusion {
     color: black;
+    scroll-snap-align: end;
 }
 
  .conclusion .fin-trait {
@@ -996,6 +1006,7 @@ audio::-webkit-media-controls-time-remaining-display {
     margin: 65px auto 50px;
     line-height: 1;
     color: #2C2C2C;
+    scroll-snap-align: end;
 }
 
 .nbr_victims_style {
