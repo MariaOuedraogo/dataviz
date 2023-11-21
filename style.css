@@ -18,6 +18,8 @@ body {
 
 }
 
+
+
 /* loader */
 .loader{
     z-index: 999;
@@ -30,6 +32,10 @@ body {
     align-items: center;
     flex-direction: column;
 
+    
+    top: 0;
+    left: 0;
+   
 }
 .loader p{
     margin-top: 20px;
@@ -937,4 +943,8 @@ audio::-webkit-media-controls-time-remaining-display {
 .title_exploitation{
     margin-bottom: 30px;
     font-weight: 100;
+}
+
+.nombres_victimes {
+    font-weight: 400;
 }
