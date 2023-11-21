@@ -90,7 +90,7 @@ fetch('list.json').then(function (response) {
         const typeValue = finalData[index][1];
 
         // Display the value associated with finalData[i][1]
-        details.innerHTML += "<p class='nombres_victimes'id='test'>" +  typeValue + " " +"victims" +"</p>";
+        details.innerHTML += "<p  class='nombres_victimes'id='test'>" +  typeValue + " " +"victims" +"</p>";
         
         // Check if details are available in typesExploitation object
         if (typesExploitation[typeName]) {

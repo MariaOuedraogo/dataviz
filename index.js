@@ -3,6 +3,8 @@ import './gender.js';
 
 "use strict";
 
+// animation machine à écrire
+
 // Variable pour suivre si l'animation a été déclenchée
 let animationTriggered = false;
 
@@ -67,8 +69,9 @@ function animate_text() {
 
 //cercle scroll
 
-const text = document.querySelector('.text p');
-            text.innerHTML = text.innerText.split("").map(
-                (char, i) =>
-                `<span style="transform:rotate(${i * 4.65}deg)">${char}</span>`
-            ).join("")
+
+            
+
+
+
+

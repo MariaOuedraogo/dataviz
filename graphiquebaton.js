@@ -1,9 +1,11 @@
 d3.json("graphiquebaton.json").then(function(data){
 
+    
     let largeur_colonne=50/data.length;
     let espaceEntreBarres = 0.2;
 
 
+// création des barres 
 d3.select("#barres")
     .selectAll(".histobarre")
     .data(data)
@@ -24,6 +26,7 @@ d3.selectAll(".histobarre")
     }})
     
 
+// animation au survol de transparence 
 d3.selectAll(".histobarre")
     .on("mouseenter", function(e,d){
     /* transparence */
@@ -43,7 +46,7 @@ d3.selectAll(".histobarre")
 })  
 
 
-// Ajouter des étiquettes au survol
+// Seule la barre séléctionné est coloré
 d3.selectAll(".histobarre")
 .on("mouseenter", function(e, d) {
     d3.selectAll(".histobarre")
@@ -51,7 +54,7 @@ d3.selectAll(".histobarre")
     d3.select(this)
         .style("opacity", null);
 
-    // Ajouter l'étiquette au survol
+    // Ajouter les données au survol
     d3.select(this)
         .append("text")
         .attr("class", "etiquette")
@@ -76,7 +79,7 @@ d3.selectAll(".histobarre")
 
 d3.selectAll(".histobarre")
     .each(function(d) {
-        // Ajouter le texte uniquement pour les années 2002 et 2021
+        // Ajout des années 
         if (d["yearOfRegistration"] === 2002 || d["yearOfRegistration"] === 2021 || d["yearOfRegistration"] === 2012 || d["yearOfRegistration"] === 2007 || d["yearOfRegistration"] === 2016 )  {
             d3.select(this)
                 .append("text")
