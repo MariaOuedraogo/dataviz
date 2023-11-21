@@ -799,6 +799,8 @@ li{
 .details{
     background-color: #2C2C2C;
     color:#F4F4F4 ;
+    /* font-family: 'Roboto Mono', monospace; */
+
    
 }
  .wrapper{
@@ -840,6 +842,7 @@ li{
 .def{
     font-size: 1rem;
     padding-right: 100px;
+    font-weight: 100;
 }
 
 /* audio::-webkit-media-controls-panel {
@@ -877,4 +880,9 @@ audio::-webkit-media-controls-time-remaining-display {
 
 .nbr_victims_style {
     color: #B81E1A; /* ou toute autre valeur de couleur rose que vous préférez */
+}
+
+.title_exploitation{
+    margin-bottom: 30px;
+    font-weight: 100;
 }
