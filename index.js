@@ -8,19 +8,20 @@ import './gender.js';
 const loader = document.querySelector('.loader');
 
 window.addEventListener('load', () => {
-    // Ajoutez la classe au corps lorsque le chargement est terminé
+    // Add the specific class to the body when loading is complete
     document.body.classList.add('no-scroll');
 
-    // Ajoutez le délai en millisecondes que vous souhaitez
-    const delayInMilliseconds = 6500; // Par exemple, 3000 millisecondes (3 secondes)
+    // Add the delay in milliseconds as desired
+    const delayInMilliseconds = 5000; // For example, 3000 milliseconds (3 seconds)
 
-    // Utilisez setTimeout pour ajouter la classe de fondu-out après le délai spécifié
+    // Use setTimeout to add the fade-out class after the specified delay
     setTimeout(() => {
         loader.classList.add('fondu-out');
-        // Retirez la classe no-scroll lorsque l'animation est terminée
+        // Remove the specific class when the animation is complete
         document.body.classList.remove('no-scroll');
     }, delayInMilliseconds);
 });
+
 
 // animation machine à écrire
 

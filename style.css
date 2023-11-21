@@ -41,14 +41,25 @@ body {
     animation: flash 2s linear infinite;
 }
 
-@keyframes flash{
-    0%{
-        opacity: .5;
+@keyframes flash {
+    0% {
+        opacity: 0.5;
     }
-    
-    
-    100%{
+
+    25% {
+        opacity: 0.8;
+    }
+
+    50% {
         opacity: 1;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.5;
     }
 }
 
