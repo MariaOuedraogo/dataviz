@@ -3,6 +3,25 @@ import './gender.js';
 
 "use strict";
 
+//loader
+
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+    // Ajoutez la classe au corps lorsque le chargement est terminé
+    document.body.classList.add('no-scroll');
+
+    // Ajoutez le délai en millisecondes que vous souhaitez
+    const delayInMilliseconds = 6500; // Par exemple, 3000 millisecondes (3 secondes)
+
+    // Utilisez setTimeout pour ajouter la classe de fondu-out après le délai spécifié
+    setTimeout(() => {
+        loader.classList.add('fondu-out');
+        // Retirez la classe no-scroll lorsque l'animation est terminée
+        document.body.classList.remove('no-scroll');
+    }, delayInMilliseconds);
+});
+
 // animation machine à écrire
 
 // Variable pour suivre si l'animation a été déclenchée
