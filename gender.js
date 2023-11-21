@@ -1,7 +1,10 @@
+//En incorporant des données JSON, nous avons la possibilité de générer des diagrammes circulaires qui représentent à la fois le pourcentage et le type d'opération associés à ces données.
+
 d3.json("gender.json",).then(function(data) {
   const selectedTypes = ["isForcedLabour", "isSexualExploit", "isOtherExploit"];
   
-//Mens
+//On utilise la fonction selectAll pour sélectionner tous les éléments ayant la classe CSS "pourcentage". Grâce à la base de données, nous pouvons attribuer une valeur correspondant au pourcentage d'hommes victimes d'un type d'exploitation, à l'aide de la balise data. Ensuite, avec la fonction, nous calculons le pourcentage d'hommes arrondi par rapport au total, à l'aide de Math.floor.
+//men
   d3.selectAll(".part")
     .data(data)
     .attr("stroke-dasharray",function(d){
@@ -19,7 +22,7 @@ d3.json("gender.json",).then(function(data) {
     const menPercentage =Math.floor((d.Men / (d.Women + d.Girls + d.Men + d.Boys)) * 100) ;
     return `${menPercentage}%`
   })
-//Woens
+//Womens
   d3.selectAll(".part2")
     .data(data)
     .attr("stroke-dasharray",function(d){
@@ -90,110 +93,101 @@ d3.selectAll(".part3")
 
 // MEN //
 
+//Lier les balises h3 représentant les genres (hommes, femmes, garçons, filles). J'ai essayé de lier la balise h3 représentant les "Hommes" en utilisant son attribut data-group-id, puis de sélectionner le contenu du groupe "Hommes" par son ID. L'objectif était d'afficher ce contenu lorsque l'utilisateur survolait l'en-tête "Hommes". Nous avons également implémenté un changement de curseur lors du survol et ajouté un écouteur d'événement pour gérer la sortie du survol. L'idée était de cacher le contenu lorsque l'utilisateur ne survolait plus l'en-tête de tous les h3 (data-group-id) et de rétablir le curseur par défaut à ce moment-là.
 
-// Sélectionnez l'en-tête "Men" par son attribut data-group-id
 const menHeader = document.querySelector('h3[data-group-id="men"]');
-  
-// Sélectionnez le contenu du groupe "Men" par son ID
 const menContent = document.getElementById('men');
   
-// Ajoutez un écouteur d'événement pour gérer le survol
 menHeader.addEventListener('mouseenter', () => {
-  // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Men"
-  menContent.style.display = 'block';
-  // Changez le curseur lors du survol
-  menHeader.style.cursor = 'pointer';
+
+menContent.style.display = 'block';
+
+menHeader.style.cursor = 'pointer';
 });
   
-// Ajoutez un écouteur d'événement pour gérer la sortie du survol
+
 menHeader.addEventListener('mouseleave', () => {
-  // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Men"
-  menContent.style.display = 'none';
-  // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
+
+menContent.style.display = 'none';
+
   menHeader.style.cursor = 'default';
 });
 
 // WOMEN //
 
-// Sélectionnez l'en-tête "Women" par son attribut data-group-id
+
 const womenHeader = document.querySelector('h3[data-group-id="women"]');
   
-// Sélectionnez le contenu du groupe "Women" par son ID
 const womenContent = document.getElementById('women');
-   
-// Ajoutez un écouteur d'événement pour gérer le survol
+
 womenHeader.addEventListener('mouseenter', () => {
-  // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Women"
+
   womenContent.style.display = 'block';
-  // Changez le curseur lors du survol
+
   womenHeader.style.cursor = 'pointer';
 });
    
-// Ajoutez un écouteur d'événement pour gérer la sortie du survol
+
 womenHeader.addEventListener('mouseleave', () => {
-  // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Women"
+ 
   womenContent.style.display = 'none';
-  // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
+
   womenHeader.style.cursor = 'default';
 });
 
 // Boys //
 
-// Sélectionnez l'en-tête "Boys" par son attribut data-group-id
 const boysHeader = document.querySelector('h3[data-group-id="boys"]');
   
-// Sélectionnez le contenu du groupe "Boys" par son ID
+
 const boysContent = document.getElementById('boys');
    
-// Ajoutez un écouteur d'événement pour gérer le survol
 boysHeader.addEventListener('mouseenter', () => {
-  // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Boys"
+
   boysContent.style.display = 'block';
-  // Changez le curseur lors du survol
+
   boysHeader.style.cursor = 'pointer';
 });
    
-// Ajoutez un écouteur d'événement pour gérer la sortie du survol
+
 boysHeader.addEventListener('mouseleave', () => {
-  // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Boys"
+ 
   boysContent.style.display = 'none';
-  // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
+ 
   boysHeader.style.cursor = 'default';
 });
 
 // Girls //
 
-// Sélectionnez l'en-tête "Girls" par son attribut data-group-id
 const girlsHeader = document.querySelector('h3[data-group-id="girls"]');
   
-// Sélectionnez le contenu du groupe "Girls" par son ID
+
 const girlsContent = document.getElementById('girls');
    
-// Ajoutez un écouteur d'événement pour gérer le survol
+
 girlsHeader.addEventListener('mouseenter', () => {
-  // Affichez le contenu lorsque l'utilisateur survole l'en-tête "Girls"
+  
   girlsContent.style.display = 'block';
-  // Changez le curseur lors du survol
+
   girlsHeader.style.cursor = 'pointer';
 });
    
-// Ajoutez un écouteur d'événement pour gérer la sortie du survol
+// Nous avons incorporé un gestionnaire d'événements pour gérer la fin du survol. L'objectif était de masquer le contenu lorsque l'utilisateur ne survole plus les en-têtes des h3 "gender" et de rétablir le curseur par défaut lorsqu'il quitte ces en-têtes. De plus, nous avons ajouté un gestionnaire d'événements au clic sur les éléments h2. Notre intention était d'obtenir l'ID de groupe à partir de l'attribut data-group-id et de récupérer le cercle correspondant à cet ID pour une interaction plus poussée.
+
+
 girlsHeader.addEventListener('mouseleave', () => {
-  // Masquez le contenu lorsque l'utilisateur ne survole pas l'en-tête "Girls"
-  girlsContent.style.display = 'none';
-  // Remettez le curseur par défaut lorsqu'on quitte l'en-tête
+  
+girlsContent.style.display = 'none';
+ 
 });
 
-// Ajoutez un gestionnaire d'événements au clic sur les éléments h2
+
 document.querySelectorAll('.gender h3').forEach(function(element) {
   element.addEventListener('click', function() {
-    // Réinitialisez tous les éléments à leur état initial
-   
+ 
+     var groupId = this.getAttribute('data-group-id');
 
-    // Obtenez l'ID de groupe à partir de l'attribut data-group-id
-    var groupId = this.getAttribute('data-group-id');
-
-    // Obtenez le cercle correspondant à l'ID de groupe
+    
     var circle = document.querySelector('.part[data-group-id="' + groupId + '"],' +
                                        '.part2[data-group-id="' + groupId + '"],' +
                                        '.part3[data-group-id="' + groupId + '"],' +
@@ -208,23 +202,23 @@ document.querySelectorAll('.gender h3').forEach(function(element) {
 
 
   
-// Sélectionnez tous les éléments h3 avec un attribut data-group-id
+// Nous avons implémenté un gestionnaire d'événements pour gérer la désactivation du survol. L'objectif était de masquer le contenu, notamment les camemberts, car un texte est initialement visible, et ce texte disparaît au survol des éléments h3 "gender". Cela se produit lorsque l'utilisateur n'est plus en survol des en-têtes h3 "gender", et nous avons également rétabli le curseur par défaut à ce moment-là. En outre, nous avons ajouté un gestionnaire d'événements au clic sur les éléments h2, avec pour but d'extraire l'ID de groupe à partir de l'attribut data-group-id et de récupérer le cercle correspondant à cet ID pour une expérience utilisateur plus fluide
 const groupHeaders = document.querySelectorAll('h3[data-group-id]');
 
-// Sélectionnez l'élément avec l'id "info"
+
 const infoElement = document.getElementById('info');
 
-// Ajoutez un gestionnaire d'événements à chaque en-tête de groupe
+
 groupHeaders.forEach(header => {
-  // Ajoutez un écouteur d'événements pour le survol (mouseenter)
+ 
   header.addEventListener('mouseenter', () => {
-    // Masquez l'élément "info" lors du survol d'un en-tête de groupe
+   
     infoElement.style.display = 'none';
   });
 
-  // Ajoutez un écouteur d'événements pour la sortie du survol (mouseleave)
+
   header.addEventListener('mouseleave', () => {
-    // Réaffichez l'élément "info" lorsque le curseur quitte l'en-tête de groupe
+   
     infoElement.style.display = 'block';
   });
 });
