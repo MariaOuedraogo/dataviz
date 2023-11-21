@@ -763,6 +763,21 @@ li{
     padding: 50px;
     font-size: 3rem;
   }
+  .ligne-classement {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    color: #2C2C2C;
+    padding: 0 30px;
+}
+
+.ligne-classement p, .ligne-classement a {
+    margin: 0; /* Supprimez les marges par défaut pour un alignement précis */
+}
+
+.ligne-horizontale {
+    clear: both; /* Assurez-vous que la ligne horizontale est en dessous de la paire paragraphe-lien */
+}
 
 
   
@@ -833,7 +848,8 @@ audio::-webkit-media-controls-time-remaining-display {
 .type_names{
     color: #2c2c2c;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .forms_title{

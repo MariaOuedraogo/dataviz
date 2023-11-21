@@ -58,22 +58,18 @@ fetch('list.json').then(function (response) {
     console.log(total);
 
     let classement = document.querySelector(".classement");
+let numeroLigne = 1; // Variable pour suivre le numéro de ligne
 
-    // for (var i = 0; i < finalData.length; i++) {
-    //   const id = typesExploitation[typeName].id;
+for (var i = 0; i < finalData.length; i++) {
+    const id = typesExploitation[finalData[i][0]].id;
 
-    //   // classement.innerHTML += "<li class='type_names'>" +"<a>"   + finalData[i][0] + "</a>"+ "</li>" + "<div class='ligne-horizontale'></div>";
-    //   classement.innerHTML +=  "<a class='type_names' href='" + id + "'>" + finalData[i][0] + "</a>" + "<div class='ligne-horizontale'></div>";
-
-
-  
-    // }
-
-    for (var i = 0; i < finalData.length; i++) {
-  const id = typesExploitation[finalData[i][0]].id;
-  classement.innerHTML +=  "<a class='type_names' href='#details'>" + finalData[i][0] + "</a>" + "<div class='ligne-horizontale'></div>";
-
+    // Utilisez une div pour envelopper le paragraphe et le lien
+    classement.innerHTML +=  "<div class='ligne-classement'><p>" + numeroLigne + "</p><a class='type_names' href='#details'>" + finalData[i][0] + "</a></div><div class='ligne-horizontale'></div>";
+    
+    // Incrémentez le numéro de ligne pour la prochaine itération
+    numeroLigne++;
 }
+
 
 
     var type_names = document.querySelectorAll(".type_names");
