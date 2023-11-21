@@ -61,6 +61,11 @@ categoryPercentage:.9,
 
         mantainAspectRation:false,
         plugins :{
+            legend:{
+                position:'right',
+                align:'end'
+
+            },
             stacked100:{
                 enable:true
             }

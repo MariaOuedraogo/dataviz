@@ -3,6 +3,26 @@ import './gender.js';
 
 "use strict";
 
+//loader
+
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+    // Add the specific class to the body when loading is complete
+    document.body.classList.add('no-scroll');
+
+    // Add the delay in milliseconds as desired
+    const delayInMilliseconds = 5000; // For example, 3000 milliseconds (3 seconds)
+
+    // Use setTimeout to add the fade-out class after the specified delay
+    setTimeout(() => {
+        loader.classList.add('fondu-out');
+        // Remove the specific class when the animation is complete
+        document.body.classList.remove('no-scroll');
+    }, delayInMilliseconds);
+});
+
+
 // animation machine à écrire
 
 // Variable pour suivre si l'animation a été déclenchée
