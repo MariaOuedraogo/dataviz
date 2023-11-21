@@ -789,6 +789,42 @@ a {
     right: 0;
     cursor: pointer;
 }
+.popup {
+    width: 100vh;
+    z-index: 999;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    overflow-y: scroll;
+    background-color: #2C2C2C;
+    line-height: 2.5rem;
+}
+
+.popup-visible img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    right: 3%;
+    top: 5%;
+    position: fixed;
+}
+.bouton{
+    font-size: 1rem;
+
+}
+
+
+.croix {
+    position: fixed;
+}
+
+
+
+
 /*crédit*/
 
 .chartBox {
@@ -801,46 +837,20 @@ a {
 
 button{
     background-color: transparent;
-    border: none;
     border: 1px solid #2C2C2C;
-    color: #2C2C2C;
+    color: #C5332F;
     padding: 5px 5px;
+    font-size: 1.9rem;
+    font-weight: 400;
     transition: 0.5s ease-in-out;
-    position: relative;
     margin: 10px 10px 30px 0;
     
+   
 }
 
-.type_names{
-    background-color: transparent;
-    border: none;
-    color: #2C2C2C;
-    padding: 5px 5px;
-    transition: 0.5s ease-in-out;
-    position: relative;
-    margin: 10px 10px 30px 0;
-}
 
-button::before, .type_names::before {
-    content: "";
-    inset: 0;
-    clip-path: circle(0% at 50% 50%);
-    z-index: -1;
-    background-color: #2C2C2C;
-    transition: .5s ease-in-out;
-    position: absolute;
-}
 
-button:hover, .type_names:hover {
-    color: #F4F4F4;
-    cursor: none;
-}
 
-button:hover::before, .type_names:hover::before {
-    clip-path: circle(100% at 50% 50%);
-        cursor: none;
-
-}
 
 ul{
     list-style: none;

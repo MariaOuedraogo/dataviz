@@ -92,9 +92,16 @@ function animate_text() {
 
 //cercle scroll
 
+let popup = document.getElementById('popup');
+let openPopupButton = document.getElementById('openPopup');
+let fermerButton = document.querySelector('.fermer');
 
-            
+openPopupButton.addEventListener('click', function() {
+  popup.style.display = 'block';
+});
 
-
+fermerButton.addEventListener('click', function() {
+  popup.style.display = 'none';
+});
 
 
