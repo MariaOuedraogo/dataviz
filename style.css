@@ -17,7 +17,10 @@ body {
     scroll-snap-type: y mandatory;
 
 
+}
 
+.avoid{
+    color: #B81E1A;
 }
 
 /* loader */
@@ -38,7 +41,7 @@ body {
     color: #F4F4F4;
 }
 .loader img {
-    width: 50px;
+    width: 100px;
     height: auto;
     animation: flash 2s linear infinite;
 }
