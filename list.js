@@ -71,7 +71,7 @@ fetch('list.json').then(function (response) {
 
     for (var i = 0; i < finalData.length; i++) {
   const id = typesExploitation[finalData[i][0]].id;
-  classement.innerHTML +=  "<a class='type_names' href='#test'>" + finalData[i][0] + "</a>" + "<div class='ligne-horizontale'></div>";
+  classement.innerHTML +=  "<a class='type_names' href='#details'>" + finalData[i][0] + "</a>" + "<div class='ligne-horizontale'></div>";
 
 }
 
@@ -90,7 +90,7 @@ fetch('list.json').then(function (response) {
         const typeValue = finalData[index][1];
 
         // Display the value associated with finalData[i][1]
-        details.innerHTML += "<p  class='nombres_victimes'id='test'>" +  typeValue + " " +"victims" +"</p>";
+        details.innerHTML += "<p  class='nombres_victimes'id='details'>" +  typeValue + " " +"victims" +"</p>";
         
         // Check if details are available in typesExploitation object
         if (typesExploitation[typeName]) {

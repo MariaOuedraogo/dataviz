@@ -699,6 +699,7 @@ a {
 .chartBox {
     width: 800px;
     padding-left: 30px;
+    padding-bottom: 50px;
 }
 
 
@@ -828,4 +829,12 @@ audio::-webkit-media-controls-time-remaining-display {
 .type_names{
     color: #2c2c2c;
     text-decoration: none;
+}
+
+.forms_title{
+    font-size: 3rem;
+    width: 80%;
+    margin: 65px auto 50px;
+    line-height: 1;
+    color: #2C2C2C;
 }
