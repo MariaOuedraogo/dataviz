@@ -30,9 +30,9 @@ Histogram: Integration of videos, testimonials and reports to enrich the present
 ### Technologies used
 <br>
 
-Front-end languages : HTML, CSS, JavaScript
-JavaScript libraries : D3.js, Chart.js
-Media integration via external APIs
+Front-end languages : HTML, CSS, JavaScript -
+JavaScript libraries : D3.js, Chart.js -
+Media integration via external APIs -
  <br>
 
 ### Contributors
