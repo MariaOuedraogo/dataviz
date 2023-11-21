@@ -33,6 +33,8 @@ body {
     color: rgb(255, 255, 255);
     background-color: #e4e4e4;
     overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+
 
 
 }
@@ -182,6 +184,8 @@ main .section {
   font-weight: 400;
   width: 30%;
   margin-top: 30px;
+  scroll-snap-align: start;
+
 
 }
 
@@ -281,6 +285,8 @@ main .section {
     background-size: cover; 
     font-family: 'Roboto Mono', monospace;
     color: black;
+    scroll-snap-align: center;
+
 }
 
 .page-explication h2 {
