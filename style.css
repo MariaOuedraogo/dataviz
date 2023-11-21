@@ -770,7 +770,6 @@ li{
 .details{
     background-color: #2C2C2C;
     color:#F4F4F4 ;
-    padding-bottom: 50px;
    
 }
  .wrapper{
@@ -778,6 +777,8 @@ li{
     max-width: 60%;
     margin: 0 auto;
     grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 50px;
+
 
  }
 
