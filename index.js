@@ -3,24 +3,27 @@ import './gender.js';
 
 "use strict";
 
-//loader
-
 const loader = document.querySelector('.loader');
 
 window.addEventListener('load', () => {
-    // Add the specific class to the body when loading is complete
-    document.body.classList.add('no-scroll');
+    // Ajouter la classe spécifique pour positionner le loader en position absolue
+    loader.classList.add('absolute-loader');
 
-    // Add the delay in milliseconds as desired
-    const delayInMilliseconds = 5000; // For example, 3000 milliseconds (3 seconds)
+    // Ajouter le délai en millisecondes souhaité
+    const delayInMilliseconds = 5000; // Par exemple, 5000 millisecondes (5 secondes)
 
-    // Use setTimeout to add the fade-out class after the specified delay
+    // Utiliser setTimeout pour ajouter la classe fade-out après le délai spécifié
     setTimeout(() => {
         loader.classList.add('fondu-out');
-        // Remove the specific class when the animation is complete
-        document.body.classList.remove('no-scroll');
     }, delayInMilliseconds);
 });
+
+// Ajouter un écouteur d'événement pour détecter la fin de l'animation de fondu-out
+loader.addEventListener('animationend', () => {
+    // Supprimer le loader du DOM après l'animation
+    loader.remove();
+});
+
 
 
 // animation machine à écrire

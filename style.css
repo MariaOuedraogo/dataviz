@@ -7,7 +7,26 @@
     scroll-behavior: smooth;    
 }
 
-
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* border-radius: 2px; */
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #B81E1A; 
+    /* border-radius: 10px; */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B81E1A; 
+  }
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -16,6 +35,10 @@ body {
     overflow-x: hidden;
 
 
+}
+
+webkit-scrollbar{
+    width:auto;
 }
 
 /* loader */
@@ -30,13 +53,21 @@ body {
     align-items: center;
     flex-direction: column;
 
+    
+    top: 0;
+    left: 0;
+   
+}
+
+.avoid{
+    color: #B81E1A;
 }
 .loader p{
     margin-top: 20px;
     color: #F4F4F4;
 }
 .loader img {
-    width: 50px;
+    width: 100px;
     height: auto;
     animation: flash 2s linear infinite;
 }
@@ -947,4 +978,8 @@ audio::-webkit-media-controls-time-remaining-display {
 .title_exploitation{
     margin-bottom: 30px;
     font-weight: 100;
+}
+
+.nombres_victimes {
+    font-weight: 400;
 }
