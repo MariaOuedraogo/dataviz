@@ -11,6 +11,8 @@ body {
     font-family: 'Poppins', sans-serif;
     color: rgb(255, 255, 255);
     background-color: #e4e4e4;
+    cursor: url("/uploads/media/default/0001/02/ee4486d1b3fc998e444c3b0100c73db282760eb5.png"), auto;
+
 }
 
 /*page d'accueil*/
@@ -706,7 +708,8 @@ a {
 }
 
 
-button {
+
+button{
     background-color: transparent;
     border: none;
     border: 1px solid #2C2C2C;
@@ -718,7 +721,17 @@ button {
     
 }
 
-button::before {
+.type_names{
+    background-color: transparent;
+    border: none;
+    color: #2C2C2C;
+    padding: 5px 5px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    margin: 10px 10px 30px 0;
+}
+
+button::before, .type_names::before {
     content: "";
     inset: 0;
     clip-path: circle(0% at 50% 50%);
@@ -728,12 +741,12 @@ button::before {
     position: absolute;
 }
 
-button:hover {
+button:hover, .type_names:hover {
     color: #F4F4F4;
     cursor: none;
 }
 
-button:hover::before {
+button:hover::before, .type_names:hover::before {
     clip-path: circle(100% at 50% 50%);
         cursor: none;
 
@@ -756,6 +769,7 @@ li{
   .classement{
     width: 80%;
     margin: 0 auto;
+    cursor: url(imagesaccueil/bonhomme-icone.png), auto;
   }
 
   .nombres_victimes{
@@ -807,6 +821,7 @@ li{
     width: 300px;
     height: 300px;
     object-fit: cover; 
+    filter: grayscale(50%);
   }
 
   .explication{

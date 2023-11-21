@@ -64,7 +64,7 @@ for (var i = 0; i < finalData.length; i++) {
     const id = typesExploitation[finalData[i][0]].id;
 
     // Utilisez une div pour envelopper le paragraphe et le lien
-    classement.innerHTML +=  "<div class='ligne-classement'><p>" + numeroLigne + "</p><a class='type_names' href='#details'>" + finalData[i][0] + "</a></div><div class='ligne-horizontale'></div>";
+    classement.innerHTML +=  "<div class='ligne-classement' ><p>" + numeroLigne + "</p><a class='type_names' href='#details'>" + finalData[i][0] + "</a></div><div class='ligne-horizontale'></div>";
     
     // Incrémentez le numéro de ligne pour la prochaine itération
     numeroLigne++;
@@ -86,7 +86,6 @@ for (var i = 0; i < finalData.length; i++) {
         const typeValue = finalData[index][1];
 
         // Display the value associated with finalData[i][1]
-        // details.innerHTML += "<p  class='nombres_victimes'id='details'>" +  typeValue + " " +"victims" +"</p>";
         details.innerHTML += "<p class='nombres_victimes' id='details'><span class='nbr_victims_style'>" + typeValue + "</span> victims</p>";
 
         
@@ -97,8 +96,7 @@ for (var i = 0; i < finalData.length; i++) {
           const image = typesExploitation[typeName].image;
           const id = typesExploitation[typeName].id;
 
-          // details.innerHTML += "<p class='details'>" + "Description: " + description + "</p>";
-          // details.innerHTML += "<p class='details'>" + "Témoignages: " + temoignages + "</p>";
+          
 
           details.innerHTML +=
           "<div class='wrapper' '>" +
