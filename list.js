@@ -12,7 +12,7 @@ const names = {
 const typesExploitation = {
   "forced labor in the construction industry": {"description": "Forced construction labor refers to a situation in which individuals are compelled to engage in construction work against their will and without proper consent. This can involve various forms of coercion, threats, or manipulation to make individuals work under conditions that are often exploitative and in violation of their basic human rights.", "temoignages": "list_aud/construction.mp3", "image": "list_img/construction.jpg"},
 
-  "domestic slavery": {"description": "In the case of domestic work, the transition to trafficking occurs when the employer resorts to force, fraud, or coercion to maintain dominance over the worker, leaving the latter with the pervasive feeling that there is no viable alternative but to persist in the work. Common manifestations of force include physical or sexual abuse, restrictions on movement, limiting communication with family or friends, continuous surveillance, and the denial of appropriate treatment for work-related injuries, often accompanied by sleep deprivation.", "temoignages": "list_aud/domestic.mp3", "image": "list_img/domestic.jpg"},
+  "domestic slavery": {"description": "In the case of domestic work, the transition to trafficking occurs when the employer resorts to force, fraud, or coercion to maintain dominance over the worker, leaving the latter with the pervasive feeling that there is no viable alternative but to persist in the work. Common manifestations of force include physical or sexual abuse, restrictions on movement, limiting communication with family or friends, continuous surveillance, and the denial of appropriate treatment for work-related injuries, often accompanied by sleep deprivation.", "temoignages": "list_aud/domestic.mp3", "image": "list_img/domestic.png"},
 
   "forced labor in the  hospitality industry": {"description": "Forced hospitality is a form of exploitation where people are forced or coerced, often by threat or deception, to work in the hospitality industry. This includes being forced to provide accommodation and services, for example in hotels or restaurants, under conditions that violate their rights and autonomy. Victims of forced hospitality can be victims of exploitation, abuse and deprivation of their fundamental human rights, as they are forced to work in the hospitality sector against their will.","temoignages": "list_aud/hospitality.mp3", "image": "list_img/hospitality.jpg"},
 
@@ -107,7 +107,7 @@ fetch('list.json').then(function (response) {
           "<div class='explication'>" +
           "<h2 class='title_exploitation'>" + typeName + "</h2>" +
           "<div class='def'>" + description + "</div>" +
-          "<div class='audio container'>" +
+          "<div class='audio '>" +
           "  <audio controls>" +
           "    <source src='"+ temoignages +"' type='audio/mp3'>" + 
           "</audio>" +
@@ -117,7 +117,7 @@ fetch('list.json').then(function (response) {
           "  <img src='" + image + "' alt=''>" +
           "</div>" +
           "</div>"
-          "<div class='audio container'>"
+          
      "</div>";
         
         

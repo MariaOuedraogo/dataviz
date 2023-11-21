@@ -381,8 +381,9 @@ rect {
 
 .container-wrapper{
     flex-wrap: wrap;
-    padding: 100px 50px 50px ;  
+    padding: 100px 50px 0px 100px ;  
     display: flex;
+    margin-bottom: 50px;
  
 
  }
