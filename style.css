@@ -702,6 +702,7 @@ a {
 .chartBox {
     width: 800px;
     padding-left: 30px;
+    padding-bottom: 50px;
 }
 
 
@@ -749,7 +750,7 @@ li{
 
 .ligne-horizontale {
     border-top: 1px solid #000; /* Couleur et épaisseur de la ligne */
-    margin: 10px 0 20px; /* Marge au-dessus et en dessous de la ligne (facultatif) */
+    margin: 10px 0 30px; /* Marge au-dessus et en dessous de la ligne (facultatif) */
   }
 
   .classement{
@@ -769,7 +770,6 @@ li{
 .details{
     background-color: #2C2C2C;
     color:#F4F4F4 ;
-    padding-bottom: 50px;
    
 }
  .wrapper{
@@ -777,6 +777,8 @@ li{
     max-width: 60%;
     margin: 0 auto;
     grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 50px;
+
 
  }
 
@@ -831,4 +833,17 @@ audio::-webkit-media-controls-time-remaining-display {
 .type_names{
     color: #2c2c2c;
     text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.forms_title{
+    font-size: 3rem;
+    width: 80%;
+    margin: 65px auto 50px;
+    line-height: 1;
+    color: #2C2C2C;
+}
+
+.nbr_victims_style {
+    color: #B81E1A; /* ou toute autre valeur de couleur rose que vous préférez */
 }
