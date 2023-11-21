@@ -379,6 +379,9 @@ rect {
 
  }
 
+ .container:hover .circle {
+    stroke-dasharray: 31.4;
+}
  .gender h3 {
     font-size: 1.9rem;
     color: black;
