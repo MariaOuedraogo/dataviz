@@ -7,7 +7,26 @@
     scroll-behavior: smooth;    
 }
 
-
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 2px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #B81E1A; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B81E1A; 
+  }
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -18,7 +37,9 @@ body {
 
 }
 
-
+webkit-scrollbar{
+    width:15px;
+}
 
 /* loader */
 .loader{
@@ -36,6 +57,10 @@ body {
     top: 0;
     left: 0;
    
+}
+
+.avoid{
+    color: #B81E1A;
 }
 .loader p{
     margin-top: 20px;
