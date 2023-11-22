@@ -44,10 +44,6 @@ datasets: [
 };
 
 
-var options = {
-
-}
-
 
 var config = {
     type: 'bar',
@@ -106,7 +102,7 @@ y: {
 
 var graph1 = new Chart(ctx, config);
 
-
+//activating the 2 buttons to create an unstacked version
 function toggleStacked(useStacked = true, useStacked100 = true) {
 isStacked = useStacked;
 isStacked100 = useStacked100;

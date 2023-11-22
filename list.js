@@ -9,6 +9,7 @@ const names = {
   "typeOfSexOther": "Other forms of sex exploitation"
 };
 
+//objet contenant les détails, def+ audio
 const typesExploitation = {
   "Forced labor in the construction industry": {"description": "Forced construction labor refers to a situation in which individuals are compelled to engage in construction work against their will and without proper consent. This can involve various forms of coercion, threats, or manipulation to make individuals work under conditions that are often exploitative and in violation of their basic human rights.", "temoignages": "list_aud/construction.mp3", "image": "list_img/construction.jpg"},
 
@@ -28,6 +29,8 @@ const typesExploitation = {
 // Début du traitement en JSON
 fetch('list.json').then(function (response) {
   response.json().then(function (data) {
+        // Object to store cumulative counts for each type of exploitation
+
     const total = {
       "typeOfLabourConstruction": 0,
       "typeOfLabourDomesticWork": 0,
@@ -38,6 +41,8 @@ fetch('list.json').then(function (response) {
       "typeOfSexOther": 0
     };
 
+        // Calculating cumulative counts from the data
+
     data.forEach(function (tranche_age_obj) {
       total.typeOfLabourConstruction += tranche_age_obj.typeOfLabourConstruction;
       total.typeOfLabourDomesticWork += tranche_age_obj.typeOfLabourDomesticWork;
@@ -47,6 +52,8 @@ fetch('list.json').then(function (response) {
       total.typeOfSexPornography += tranche_age_obj.typeOfSexPornography;
       total.typeOfSexOther += tranche_age_obj.typeOfSexOther;
     });
+
+        // Converting the total counts to a sorted array for display
 
     const entries = Object.entries(total);
 
@@ -97,7 +104,7 @@ for (var i = 0; i < finalData.length; i++) {
           const id = typesExploitation[typeName].id;
 
           
-
+          //creating details div
           details.innerHTML +=
           "<div class='wrapper' '>" +
           "<div class='explication'>" +
