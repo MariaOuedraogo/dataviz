@@ -811,9 +811,12 @@ a {
 }
 
 .pop-up{
+    width: fit-content;
     font-size: 1.2rem;
     color: #ffffff;
     cursor: pointer;
+    border: solid 1px;
+    padding: 5px;
 }
 .pop-up::after {
     
