@@ -35,6 +35,7 @@ body {
 
 
 
+
 }
 
 .avoid{
@@ -409,6 +410,7 @@ main .section {
 .page-graph-baton .graph-container {
     width: 100%;
     position: relative;
+
    
 }
 
@@ -621,6 +623,8 @@ rect {
     border: solid 1px black;
     width: 90%;
     margin-bottom: 50px;
+    cursor: url(watch.png), auto;
+
  }
 
 
@@ -777,6 +781,11 @@ a {
 .back-up{
     position: relative;
 }
+
+.back-up img{
+    cursor: url(up.png), auto;
+
+}
 .backHome {
     margin: 27px;
     width: 4vw;
@@ -915,7 +924,6 @@ li{
   .classement{
     width: 80%;
     margin: 0 auto;
-    cursor: url(imagesaccueil/bonhomme-icone.png), auto;
   }
 
   .nombres_victimes{
