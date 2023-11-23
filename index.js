@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     loader.classList.add('absolute-loader');
 
     // Ajouter le délai en millisecondes souhaité
-    const delayInMilliseconds = 5000; // Par exemple, 5000 millisecondes (5 secondes)
+    const delayInMilliseconds = 3000; // Par exemple, 5000 millisecondes (5 secondes)
 
     // Utiliser setTimeout pour ajouter la classe fade-out après le délai spécifié
     setTimeout(() => {

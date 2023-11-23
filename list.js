@@ -1,3 +1,15 @@
+// supprimer l'id details qui affiche les définitions pour éviter les bugs lors du rechargement
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Supprimer l'élément avec l'id "details" s'il existe
+  var existingDetails = document.getElementById("details");
+  if (existingDetails) {
+    existingDetails.remove();
+  }
+
+  // Supprimer l'ancre dans l'URL
+  history.replaceState({}, document.title, window.location.pathname + window.location.search)});
+
 // Cette association permettra d'avoir des noms communs pour lors de l'affichage sur écran
 const names = {
   "typeOfLabourConstruction": "Forced labor in the construction industry",
@@ -25,6 +37,9 @@ const typesExploitation = {
 
   "Other forms of sex exploitation": {"description": "Indicates whether the individual experienced exploitation depicting sexual behavior other than prostitution and pornography. It includes remote interactive services and private sexual services.", "temoignages": "list_aud/other_sex.mp3", "image": "list_img/other_sex.jpg"}
 };
+
+
+
 
 // Début du traitement en JSON
 fetch('list.json').then(function (response) {
