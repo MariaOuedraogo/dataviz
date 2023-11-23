@@ -71,7 +71,7 @@ for (var i = 0; i < finalData.length; i++) {
     const id = typesExploitation[finalData[i][0]].id;
 
     // Utilisez une div pour envelopper le paragraphe et le lien
-    classement.innerHTML +=  "<div class='ligne-classement' ><p>" + numeroLigne + "</p><a class='type_names' href='#details'>" + finalData[i][0] + "</a></div><div class='ligne-horizontale'></div>";
+    classement.innerHTML +=  "<div class='ligne-classement'data-aos='fade-down'  data-aos-delay='300' ><p>" + numeroLigne + "</p><a class='type_names' href='#details'>" + finalData[i][0] + "</a></div><div class='ligne-horizontale'></div>";
     
     // Incrémentez le numéro de ligne pour la prochaine itération
     numeroLigne++;
@@ -93,7 +93,7 @@ for (var i = 0; i < finalData.length; i++) {
         const typeValue = finalData[index][1];
 
         // Display the value associated with finalData[i][1]
-        details.innerHTML += "<p class='nombres_victimes' id='details'><span class='nbr_victims_style'>" + typeValue + "</span> victims</p>";
+        details.innerHTML += "<p class='nombres_victimes' id='details'><span class='nbr_victims_style' >" + typeValue + "</span> victims</p>";
 
         
         // Check if details are available in typesExploitation object

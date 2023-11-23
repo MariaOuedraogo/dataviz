@@ -23,6 +23,15 @@
     background-color: #e4e4e4;
   }
 
+
+  ::selection {
+    background-color: #B81E1A; /* Remplacez par la couleur de votre choix */
+}
+
+/* Pour les navigateurs plus anciens */
+::-moz-selection {
+    background-color: #B81E1A;
+}
   
 body {
     font-family: 'Poppins', sans-serif;
@@ -30,7 +39,6 @@ body {
     background-color: #e4e4e4;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;    
 
 
 
@@ -808,6 +816,12 @@ a {
     overflow-y: scroll;
     background-color: #2C2C2C;
     line-height: 2.5rem;
+
+
+}
+
+.popup img{
+    cursor: pointer;
 }
 
 .pop-up{
@@ -817,6 +831,7 @@ a {
     cursor: pointer;
     border: solid 1px;
     padding: 5px;
+
 }
 .pop-up::after {
     
