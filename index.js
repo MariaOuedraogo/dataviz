@@ -3,26 +3,7 @@ import './gender.js';
 
 "use strict";
 
-// const loader = document.querySelector('.loader');
 
-// window.addEventListener('load', () => {
-//     // Ajouter la classe spécifique pour positionner le loader en position absolue
-//     loader.classList.add('absolute-loader');
-
-//     // Ajouter le délai en millisecondes souhaité
-//     const delayInMilliseconds = 3000; // Par exemple, 5000 millisecondes (5 secondes)
-
-//     // Utiliser setTimeout pour ajouter la classe fade-out après le délai spécifié
-//     setTimeout(() => {
-//         loader.classList.add('fondu-out');
-//     }, delayInMilliseconds);
-// });
-
-// // Ajouter un écouteur d'événement pour détecter la fin de l'animation de fondu-out
-// loader.addEventListener('animationend', () => {
-//     // Supprimer le loader du DOM après l'animation
-//     loader.remove();
-// });
 
 window.addEventListener('load', function () {
   var loader = document.querySelector('.loader');
