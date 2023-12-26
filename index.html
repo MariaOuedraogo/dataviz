@@ -55,10 +55,12 @@
 
    <!-- loader -->
    <div class="loader">
-    <img src="imagesaccueil/bonhomme-icone.png" alt="">
-    <p >please visualise this website on full screen and avoid using<span class="avoid"> safari</span></p>
+    <img src="imagesaccueil/bonhomme-icone.png" alt=""data-aos="zoom-in" data-aos-duration="1000">
+    <p data-aos="fade-up" data-aos-duration="1000">please visualise this website on full screen and avoid using<span class="avoid"> safari</span></p>
 </div>
   
+
+<div class="contenu">
   
   <!--page d'accueil-->
 
@@ -463,9 +465,9 @@
     </div>
 
 
-    <div class="chartBox "  data-aos="zoom-in" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <button  data-aos="zoom-in" data-aos="fade-up" data-aos-duration="3000"class="btn_age" id="stackedBtn" onclick="toggleStacked(true)">stacked 100%</button>
-        <button  data-aos="zoom-in" data-aos-duration="3000" class="btn_age" id="destackedBtn" onclick="toggleStacked(false)">destacked</button>
+    <div class="chartBox "  >
+        <button class="btn_age" id="stackedBtn" onclick="toggleStacked(true)">stacked 100%</button>
+        <button  class="btn_age" id="destackedBtn" onclick="toggleStacked(false)">destacked</button>
 
 
         <canvas id="graph1"></canvas>
@@ -736,7 +738,7 @@
     <!--retour à la page d'accueil-->
 
     <!--Fin credit-->
-    
+</div>
 
     <script src="stackedgraph.js"></script>
 

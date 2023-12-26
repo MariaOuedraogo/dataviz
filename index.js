@@ -3,26 +3,48 @@ import './gender.js';
 
 "use strict";
 
-const loader = document.querySelector('.loader');
+// const loader = document.querySelector('.loader');
 
-window.addEventListener('load', () => {
-    // Ajouter la classe spécifique pour positionner le loader en position absolue
-    loader.classList.add('absolute-loader');
+// window.addEventListener('load', () => {
+//     // Ajouter la classe spécifique pour positionner le loader en position absolue
+//     loader.classList.add('absolute-loader');
 
-    // Ajouter le délai en millisecondes souhaité
-    const delayInMilliseconds = 3000; // Par exemple, 5000 millisecondes (5 secondes)
+//     // Ajouter le délai en millisecondes souhaité
+//     const delayInMilliseconds = 3000; // Par exemple, 5000 millisecondes (5 secondes)
 
-    // Utiliser setTimeout pour ajouter la classe fade-out après le délai spécifié
-    setTimeout(() => {
-        loader.classList.add('fondu-out');
-    }, delayInMilliseconds);
+//     // Utiliser setTimeout pour ajouter la classe fade-out après le délai spécifié
+//     setTimeout(() => {
+//         loader.classList.add('fondu-out');
+//     }, delayInMilliseconds);
+// });
+
+// // Ajouter un écouteur d'événement pour détecter la fin de l'animation de fondu-out
+// loader.addEventListener('animationend', () => {
+//     // Supprimer le loader du DOM après l'animation
+//     loader.remove();
+// });
+
+window.addEventListener('load', function () {
+  var loader = document.querySelector('.loader');
+  var contenu = document.querySelector('.contenu');
+
+  // Masquer le loader après 3 secondes (3000 millisecondes)
+  setTimeout(function () {
+      loader.classList.add('fondu-out'); // Ajoutez la classe pour déclencher la transition de fondu
+
+      // Afficher le contenu avec l'effet de fondu
+      contenu.style.display = 'block';
+      setTimeout(function () {
+          contenu.style.opacity = '1';
+
+          // Initialiser AOS après l'affichage du contenu
+          AOS.init({
+              // Vos options de configuration AOS vont ici
+          });
+      }, 100); // Ajustez le délai pour l'effet de fondu
+  }, 3000);
 });
 
-// Ajouter un écouteur d'événement pour détecter la fin de l'animation de fondu-out
-loader.addEventListener('animationend', () => {
-    // Supprimer le loader du DOM après l'animation
-    loader.remove();
-});
 
 
 
