@@ -26,6 +26,9 @@ window.addEventListener('load', function () {
   }, 3000);
 });
 
+AOS.init({
+  // Vos options de configuration AOS vont ici
+});
 
 
 
