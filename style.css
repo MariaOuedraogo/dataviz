@@ -775,7 +775,9 @@ p{
     font-size: 0.9rem;
    
 }
-
+.person li, .Professor li{
+    cursor: context-menu;
+}
 .person{
     list-style: url('https://api.iconify.design/grommet-icons/restroom-women.svg?color=white&width=25');
 }
