@@ -561,6 +561,13 @@ rect {
   .hover_gender{
     color: #B81E1A;
   }
+
+  .based_on{
+    color: #2c2c2c;
+    font-size: 1.188rem;
+    margin: 0  auto 50px;
+    width: 80%;
+  }
   
   #info p{
     font-size: 1.2rem;
