@@ -3,7 +3,9 @@ import './gender.js';
 
 "use strict";
 
-
+// AOS.init({
+//   // Vos options de configuration AOS vont ici
+// });
 
 window.addEventListener('load', function () {
   var loader = document.querySelector('.loader');
@@ -24,11 +26,10 @@ window.addEventListener('load', function () {
           });
       }, 100); // Ajustez le délai pour l'effet de fondu
   }, 3000);
+
 });
 
-AOS.init({
-  // Vos options de configuration AOS vont ici
-});
+
 
 
 
