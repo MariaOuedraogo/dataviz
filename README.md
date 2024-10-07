@@ -38,9 +38,9 @@ Media integration via external APIs -
 ### Contributors
 
 <br>
-Graphic designers, Developers, Writers - Tania Almeida Gomes
-Designers, Developers, Writers - Alisson Menanteau
-Graphic Designers, Developers, Writers - Maria Ouedraogo
+Tania Almeida Gomes- Graphic designers Developer, Writer 
+Alisson Menanteau - Designer, Developer, Writer 
+Maria Ouedraogo - Graphic Designer, Developer, Writer
 <br>
 
 ### Visit Traffick Watch
